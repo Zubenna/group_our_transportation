@@ -1,0 +1,22 @@
+<h1>Creat Acount</h1>
+<%= form_with model: @user, class: 'new-user' do |f| %>
+    <div>
+      <%= f.label :first_name %><br />
+      <%= f.text_field :first_name, placeholder: 'Enter your first name' %>
+    </div>
+    <div>
+      <%= f.label :last_name %><br />
+      <%= f.text_field :last_name, placeholder: 'Enter your last name' %>
+    </div>
+    <div>
+       <%= f.label :email %><br />
+       <%= f.email_field :email, placeholder: 'Your email' %>
+    </div>
+    <div>
+      <%= f.label :username %><br />
+      <%= f.text_field :username, placeholder: 'Enter your username' %>
+    </div>
+    <div class="action">
+      <%= f.submit 'Sign Up' %>
+    </div>
+<% end %>
