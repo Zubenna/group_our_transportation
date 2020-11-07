@@ -1,22 +1,22 @@
 <h1>Creat Acount</h1>
 <%= form_with model: @user, class: 'new-user' do |f| %>
-    <div>
-      <%= f.label :first_name %><br />
-      <%= f.text_field :first_name, placeholder: 'Enter your first name' %>
+    <div class='user-form'>
+      <%= f.label :first_name, class: 'user-label' %><br />
+      <%= f.text_field :first_name, class: 'user-input', placeholder: 'Enter your first name' %>
     </div>
-    <div>
-      <%= f.label :last_name %><br />
-      <%= f.text_field :last_name, placeholder: 'Enter your last name' %>
+    <div class='user-form'>
+      <%= f.label :last_name, class: 'user-label' %><br />
+      <%= f.text_field :last_name, class: 'user-input', placeholder: 'Enter your last name' %>
     </div>
-    <div>
-       <%= f.label :email %><br />
-       <%= f.email_field :email, placeholder: 'Your email' %>
+    <div class='user-form'>
+       <%= f.label :email, class: 'user-label' %><br />
+       <%= f.email_field :email, class: 'user-input', placeholder: 'Your email' %>
     </div>
-    <div>
-      <%= f.label :username %><br />
-      <%= f.text_field :username, placeholder: 'Enter your username' %>
+    <div class='user-form'>
+      <%= f.label :username, class: 'user-label' %><br />
+      <%= f.text_field :username, class: 'user-input', placeholder: 'Enter your username' %>
     </div>
     <div class="action">
-      <%= f.submit 'Sign Up' %>
+      <%= f.submit 'Sign Up', class: 'sign-up' %>
     </div>
 <% end %>

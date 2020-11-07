@@ -1,10 +1,13 @@
-<% if current_user == nil && !current_user? %>
-  <%= link_to "Home", '/' %>
-<% end %>
-<% if current_user? %>
-  <%= link_to "All events" %>
-  <%= link_to "New event" %>
-  <%= link_to "You Signed in with username" %>
-  <%= link_to "Log Out", '/logout', method: :delete %>
-<% end %>
+<header class="navbar navbarfixed-top">
+<div class="container">
+<%= link_to "Group Our Transport App", '#', id: "logo" %>
+<nav>
+  <ul class="nav navbar-nav navbar-right">
+    <li><%= link_to "Home",'/', class: 'menu-item' %></li>
+    <li><%= link_to "Help",'#', class: 'menu-item' %></li>
+    <li><%= link_to "Log in", login_path, class: 'menu-item' %></li>
+  </ul>
+</nav>
+</div>
+</header>
         

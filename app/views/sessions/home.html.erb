@@ -1,12 +1,10 @@
-<h1>Welcome to Group Our Transport App</h1>
   <% if current_user %>
-
-   <%= "Logged in as #{current_user.username}" %> |  <%= button_to "Log Out", '/logout', method: :delete %>
-   <%= link_to current_user.username, user_path(current_user.id) %>
-   <%= button_to "Log Out", '/logout', method: :delete %>
-    
-  <% else %>
-    <%= link_to 'Log In', login_path %> or <%= link_to 'Sign Up', new_user_path %>
-    
+    <%= "Logged in as #{current_user.username}" %> |  <%= button_to "Log Out", '/logout', method: :delete %>
+    <%= link_to current_user.username, user_path(current_user.id) %>
+    <%= button_to "Log Out", '/logout', method: :delete %>
   <% end %>
   <hr>
+  <div class="center jumbotron color-jumbo"><h1>Welcome to Group Our Transport App</h1>
+    <h2>This is the home page for this Application </h2>
+    <%= link_to "Sign up now!", new_user_path, class: "btn btn-lg btn-primary" %>
+  </div>
