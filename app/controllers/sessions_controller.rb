@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       flash[:notice] = 'You have logged in successfully'
       session[:user_id] = @user.id
       session[:username] = @user.username
-      redirect_to('/')
+      redirect_to user_path(@user)
     else
       flash[:notice] = 'Something is wrong'
       render 'new'

@@ -20,23 +20,13 @@ section {
 .jumbotron {
   background-color: #5fb523;
 }
-.footer {
-  border-radius: 4px;
-  display: flex;
-  height: 6rem;
-  width: 100%;
-  margin-top: 19rem;
-  background-color: #5fb523;
-  padding: 1rem;
+footer {
+  margin-top: 30vh;
 }
 
-.footer ul{
-  margin-left: 70rem;
-}
-
-.footer small a{
-  text-decoration: none;
-  color: #434b54;
+footer small {
+  padding-top: 1.3rem;
+  float: left;
 }
 
 textarea {

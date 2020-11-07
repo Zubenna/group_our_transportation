@@ -3,9 +3,14 @@
 <%= link_to "Group Our Transport App", '#', id: "logo" %>
 <nav>
   <ul class="nav navbar-nav navbar-right">
+    <% if current_user? %>
+    <li><%= link_to "Log Out", '/logout', class: 'menu-item', method: :delete %></li>
+    <% end %>
     <li><%= link_to "Home",'/', class: 'menu-item' %></li>
     <li><%= link_to "Help",'#', class: 'menu-item' %></li>
+    <% if !current_user? %>
     <li><%= link_to "Log in", login_path, class: 'menu-item' %></li>
+    <% end %>
   </ul>
 </nav>
 </div>
