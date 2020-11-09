@@ -1,6 +1,7 @@
 class Transportation < ApplicationRecord
-  has_many :Groups
-  belongs_to :User
-  validates_presence_of :user_id, :name, :distance,
-  validates_length_of :name, :maximum => 50
+  has_many :groups
+  belongs_to :user
+  # mount_uploader :picture, PictureUploader
+  validates_presence_of :user_id, :distance
+  validates :name, presence: true, length: { maximum: 40 }
 end

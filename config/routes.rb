@@ -1,20 +1,9 @@
 Rails.application.routes.draw do
-  get 'transportations/new'
-  get 'transportations/index'
-  get 'transportations/create'
-  get 'transportations/show'
-  get 'transportations/edit'
-  get 'transportations/destroy'
-  get 'transportations/update'
-  get 'groups/new'
-  get 'groups/index'
-  get 'groups/create'
-  get 'groups/show'
-  get 'groups/edit'
-  get 'groups/destroy'
   root 'sessions#home'
   get '/login' => 'sessions#new'
   post '/login' =>  'sessions#create'
   delete '/logout' => 'sessions#destroy'
   resources :users
+  resources :transportations
+  resources :groups
 end

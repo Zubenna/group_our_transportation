@@ -1,2 +1,28 @@
-<h1>Transportations#index</h1>
-<p>Find me in app/views/transportations/index.html.erb</p>
+<h1>User Transportation Log</h1>
+<div class='sum_in_km'>
+<h3>Total Distance</h3>
+<h3><%= @sum.to_s + 'KM'%></h3>
+</div>
+<div class='list-transportation'>
+<table class="table table-responsive">
+    <thead>
+    <tr>
+      <th>Icon</th>
+      <th>Transportation Means</th>
+      <th>Distance (KM)</th>
+      <th>Transport Date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><% @transportations.each do |t| %></tr>
+      <td><%=  %></td>
+      <td><%= t.name %></td>
+      <td><%= t.distance %></td>
+      <td><%= t.created_at %></td>
+      <td><%= link_to "Show details", transportation_path(t) %></td>
+    <% end %> 
+ </tbody>
+</table>
+<h3><%= link_to 'Add Transportation', new_transportation_path %></h3>
+</div>

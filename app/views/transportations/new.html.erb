@@ -1,2 +1,14 @@
-<h1>Transportations#new</h1>
-<p>Find me in app/views/transportations/new.html.erb</p>
+<h1>New Transportation</h1>
+    <%= form_with model: @transportation do |f| %>
+    <div class='transport-form'>
+      <%= f.label :name, class: 'transport-label' %><br />
+      <%= f.text_field :name, class: 'transport-input' %>
+    </div>
+    <div class='transport-form'>
+      <%= f.label :distance, class: 'transport-label' %><br />
+      <%= f.text_field :distance, class: 'transport-input' %>
+    </div>
+    <div class="">
+      <%= f.submit 'Create', class: 'new-transport' %>
+    </div>
+<% end %>

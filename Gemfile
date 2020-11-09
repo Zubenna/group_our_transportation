@@ -12,6 +12,11 @@ gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 gem 'bootstrap-sass'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog', '1.38.0'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
