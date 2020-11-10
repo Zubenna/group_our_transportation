@@ -38,6 +38,8 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_storage_validations (0.8.2)
+      rails (>= 5.2.0)
     activejob (6.0.3.4)
       activesupport (= 6.0.3.4)
       globalid (>= 0.3.6)
@@ -385,6 +387,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_storage_validations (= 0.8.2)
   bootsnap (>= 1.4.2)
   bootstrap-sass
   bootstrap-will_paginate
@@ -392,6 +395,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   carrierwave
   fog (= 1.38.0)
+  image_processing (= 1.12.1)
   jbuilder (~> 2.7)
   listen (~> 3.2)
   mini_magick

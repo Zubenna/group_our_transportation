@@ -1,5 +1,10 @@
 <h1>New Transportation</h1>
     <%= form_with model: @transportation do |f| %>
+      <%= render 'layouts/error_messages' %>
+    <span class='image'>
+      <%= f.label :icon, class: 'transport-label' %><br />
+      <%= f.file_field :image, accept: 'image/jpeg,image/gif,image/png' %>
+    </span>
     <div class='transport-form'>
       <%= f.label :name, class: 'transport-label' %><br />
       <%= f.text_field :name, class: 'transport-input' %>

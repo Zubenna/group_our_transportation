@@ -4,14 +4,16 @@ class TransportationsController < ApplicationController
   end
 
   def index
-    @transportations = Transportation.all
-    @sum = Transportation.sum(:distance)
+    # @transportations = Transportation.all
+    @transportations = current_user.transportations
+    @sum = @transportations.sum(:distance)
     # @transportations = @user.transportations
   end
 
   def create
     @user = current_user
     @transportation = @user.transportations.build(transportation_params)
+    @transportation.image.attach(params[:transportation][:image])
     if @transportation.save
       flash[:notice] = 'Transportation created successfully'
       redirect_to transportations_path(@transportation)

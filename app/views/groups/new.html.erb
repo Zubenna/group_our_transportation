@@ -1,2 +1,15 @@
-<h1>Groups#new</h1>
-<p>Find me in app/views/groups/new.html.erb</p>
+<h1>New Group</h1>
+<%= form_with model: @group, html: { multipart: true } do |f| %>
+    <span class='group-form'>
+      <%= f.label :icon, class: 'group-label' %>
+      <%= f.file_field :icon, accept: 'image/jpeg,image/gif,image/png' %>
+    </span>
+    <div class='group-form'>
+      <%= f.label :name, class: 'group-label' %><br />
+      <%= f.text_field :name, class: 'group-input' %>
+    </div>
+    <div class="group-form">
+      <%= f.submit 'Create Group', class: 'new-group'%>
+    </div>
+<% end %>
+

@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    # @user = @user.transportations
+    @user = User.find(params[:id])
   end
 
   def new
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
       flash[:notice] = 'User created successfuly'
       redirect_to user_path(@user)
     else
-      flash[:notice] = 'Something is wrong'
+      flash[:notice] = 'Something went wrong'
       render('new')
     end
   end

@@ -1,2 +1,20 @@
-<h1>Groups#index</h1>
-<p>Find me in app/views/groups/index.html.erb</p>
+<h1>List of Groups</h1>
+<div class='list-group'>
+<table class="table table-responsive">
+    <thead>
+    <tr>
+      <th>Icon</th>
+      <th>Group Name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><% @groups.each do |t| %></tr>
+      <td><%= image_tag t.icon.variant(resize_to_limit: [100, 100]) if t.icon.attached? %></td>
+      <td><%= t.name %></td>
+      <td><%= link_to "Show details", group_path(t) %></td>
+    <% end %> 
+ </tbody>
+</table>
+<h3><%= link_to 'Add Group', new_group_path %></h3>
+</div>
