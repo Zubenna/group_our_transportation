@@ -2,6 +2,8 @@ class TransportationsController < ApplicationController
   def new
     @page_title = 'Add New Transportation'
     @transportation = Transportation.new
+    # @transportation.creator = current_user.username
+    # @transportation.save
   end
 
   def index
@@ -25,17 +27,29 @@ class TransportationsController < ApplicationController
   def show
   end
 
-  def edit
+  def destroy
+    @transportation = Transportation.find(params[:id])
+    @transportation.destroy
+    flash[:notice] = 'Record removed successfuly'
+    redirect_to transportations_path
   end
 
-  def destroy
+  def edit
+    @transportation = Transportation.find(params[:id])
   end
 
   def update
+    @transportation = Transportation.find(params[:id])
+    if @transportation.update_attributes(transportation_params)
+      flash[:notice] = 'Record updated successfuly'
+      redirect_to transportations_path
+    else
+      render('edit')
+    end
   end
   
   private
   def transportation_params
-    params.require(:transportation).permit(:name, :distance, :group_id)
+    params.require(:transportation).permit(:name, :distance, :group_id, :user_id, :creator)
   end
 end

@@ -3,8 +3,9 @@ class CreateTransportations < ActiveRecord::Migration[6.0]
     create_table :transportations do |t|
       t.integer :user_id
       t.integer :group_id
-      t.string :name
+      t.string  :name
       t.integer :distance
+      t.string  :creator
       t.timestamps
     end
   end

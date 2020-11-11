@@ -21,7 +21,9 @@
       <td><%= t.name %></td>
       <td><%= t.distance %></td>
       <td><%= t.created_at %></td>
-      <td><%= link_to "Show details", transportation_path(t) %></td>
+      <td><%= link_to 'Edit', edit_transportation_path(t.id) %> |
+      <%= link_to 'Delete', transportation_path(t), method: :delete, data: { confirm: 'Are you really sure?' } %>
+      </td>
       <% end %>
     <% end %> 
  </tbody>

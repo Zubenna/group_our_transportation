@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2020_11_10_034024) do
     t.integer "group_id"
     t.string "name"
     t.integer "distance"
+    t.string "creator"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

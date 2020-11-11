@@ -1,2 +1,21 @@
-<h1>Transportations#edit</h1>
-<p>Find me in app/views/transportations/edit.html.erb</p>
+<h1>Edit Transportation</h1>
+<%= form_with model: @transportation do |f| %>
+    <div>
+      <%= f.select :group_id, Group.all.collect { |x| [x.name, x.id] }, {:include_blank => 'Select One' } %><br />
+    </div>
+    <div class='transport-form'>
+      <%= f.label :name, class: 'transport-label' %><br />
+      <%= f.text_field :name, class: 'transport-input' %>
+    </div>
+    <div class='transport-form'>
+      <%= f.label :distance, class: 'transport-label' %><br />
+      <%= f.text_field :distance, class: 'transport-input' %>
+    </div>
+    <div class='transport-form'>
+      <%= f.label :creator, class: 'transport-label' %><br />
+      <%= f.select :user_id, User.all.collect { |x| [x.username, x.id] }, {:include_blank => 'Select One' } %><br />
+    </div>
+    <div class="">
+      <%= f.submit 'Create', class: 'new-transport' %>
+    </div>
+<% end %>

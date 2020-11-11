@@ -1,14 +1,12 @@
-<% if object && object.errors.size > 0 %>
-  <div id="error-explanation">
-    <h2><%= pluralize(object.errors.size, "error") %> prohibited this record from being saved</h2>
-    <p>There were problems with the following fields:</p>
+<% if @group.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+        The form contains <%= pluralize(@group.errors.count, "error") %>.
+    </div>
     <ul>
-    <% object.errors.full_messages.each do |msg| %>
+      <% @group.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
-    <% end %>
+      <% end %>
     </ul>
   </div>
 <% end %>
-
-
-<%= error_messages_for(f.object) %>

@@ -4,7 +4,7 @@
 <nav>
   <ul class="nav navbar-nav navbar-right">
     <% if current_user? %>
-    <li><%= link_to 'Back To Profile', user_path(current_user), class: 'menu-item' %></li>
+    <li><%= link_to current_user.username, user_path(current_user), class: 'menu-item' %></li>
     <li><%= link_to 'Log Out', '/logout', class: 'menu-item', method: :delete %></li>
     <% end %>
     <li><%= link_to 'Help', '#', class: 'menu-item' %></li>
