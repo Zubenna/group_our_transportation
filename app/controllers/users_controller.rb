@@ -7,14 +7,16 @@ class UsersController < ApplicationController
   end
 
   def new
+    @page_title = 'User Sign Up'
     @user = User.new
   end
 
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:notice] = 'User created successfuly'
-      redirect_to user_path(@user)
+      flash[:notice] = 'User created successfuly. Pease, login'
+      # redirect_to user_path(@user)
+      redirect_to '/'
     else
       flash[:notice] = 'Something went wrong'
       render('new')

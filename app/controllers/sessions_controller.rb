@@ -1,5 +1,10 @@
 class SessionsController < ApplicationController
-  def new  
+  def new
+    @page_title = 'User Login'  
+  end
+
+  def index
+    @page_title = 'Home'
   end
 
   def create

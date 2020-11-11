@@ -1,19 +1,18 @@
 class TransportationsController < ApplicationController
   def new
+    @page_title = 'Add New Transportation'
     @transportation = Transportation.new
   end
 
   def index
-    # @transportations = Transportation.all
+    @page_title = 'List Transportation'
     @transportations = current_user.transportations
     @sum = @transportations.sum(:distance)
-    # @transportations = @user.transportations
   end
 
   def create
     @user = current_user
     @transportation = @user.transportations.build(transportation_params)
-    @transportation.image.attach(params[:transportation][:image])
     if @transportation.save
       flash[:notice] = 'Transportation created successfully'
       redirect_to transportations_path(@transportation)
@@ -37,6 +36,6 @@ class TransportationsController < ApplicationController
   
   private
   def transportation_params
-    params.require(:transportation).permit(:name, :distance)
+    params.require(:transportation).permit(:name, :distance, :group_id)
   end
 end

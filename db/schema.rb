@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2020_11_10_034024) do
 
   create_table "groups", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "transportation_id"
     t.string "icon"
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -46,6 +47,7 @@ ActiveRecord::Schema.define(version: 2020_11_10_034024) do
 
   create_table "transportations", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "group_id"
     t.string "name"
     t.integer "distance"
     t.datetime "created_at", precision: 6, null: false

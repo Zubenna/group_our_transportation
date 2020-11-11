@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <title><%= whole_title(yield(:page_title)) %></title>
+   <title><%= @page_title ? @page_title : 'welcome' %> | Group Our Transportation App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
