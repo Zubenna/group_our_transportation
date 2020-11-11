@@ -15,7 +15,7 @@ class TransportationsController < ApplicationController
     @transportation = @user.transportations.build(transportation_params)
     if @transportation.save
       flash[:notice] = 'Transportation created successfully'
-      redirect_to transportations_path(@transportation)
+      redirect_to user_path(@user)
     else
       flash[:notice] = 'Something is wrong'
       render('new')

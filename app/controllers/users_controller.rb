@@ -1,5 +1,12 @@
 class UsersController < ApplicationController
   def index
+    @external_transportations = current_user.transportations
+    @external_sum = 0
+    @external_transportations.each do |t|
+      if t.group == nil
+      @external_sum += t.distance
+      end
+    end
   end
 
   def show
