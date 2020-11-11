@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @external_transportations = current_user.transportations
+    @external_transportations = current_user.transportations.order('created_at DESC')
     @external_sum = 0
     @external_transportations.each do |t|
       if t.group == nil
@@ -22,7 +22,6 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:notice] = 'User created successfuly. Pease, login'
-      # redirect_to user_path(@user)
       redirect_to '/'
     else
       flash[:notice] = 'Something went wrong'

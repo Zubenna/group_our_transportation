@@ -5,17 +5,18 @@
     <tr>
       <th>Icon</th>
       <th>Group Name</th>
-      <th></th>
+      <th>Creation Date</th>
     </tr>
   </thead>
   <tbody>
     <tr><% @groups.each do |t| %></tr>
-      <td><%= image_tag t.icon.variant(resize_to_limit: [100, 100]) if t.icon.attached? %></td>
+      <td><%= image_tag t.icon.variant(resize_to_limit: [60, 60]) if t.icon.attached? %></td>
       <td><%= link_to t.name, group_path(t.id) %></td>
       <td><%= t.created_at %></td>
-      <td><%= link_to 'details', group_path(t) %></td>
+      <td><%= link_to 'Edit', edit_group_path(t.id) %> |
+      <%= link_to 'Delete', group_path(t), method: :delete, data: { confirm: 'Are you really sure?' } %>
     <% end %> 
   </tbody>
 </table>
-<h3><%= link_to 'Add Group', new_group_path %></h3>
+<h3><%= link_to 'Create New', new_group_path %></h3>
 </div>

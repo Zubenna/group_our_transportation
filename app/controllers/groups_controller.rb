@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
   end
 
   def index
-    @groups = Group.all
+    @groups = Group.all.order('name')
   end
 
   def create
@@ -28,9 +28,24 @@ class GroupsController < ApplicationController
   end
 
   def edit
+    @group = Group.find(params[:id])
+  end
+
+  def update
+    @group = Group.find(params[:id])
+    if @group.update_attributes(group_params)
+      flash[:notice] = 'Record updated successfuly'
+      redirect_to groups_path
+    else
+      render('edit')
+    end
   end
 
   def destroy
+    @group = Group.find(params[:id])
+    @group.destroy
+    flash[:notice] = 'Record removed successfuly'
+    redirect_to groups_path
   end
 
   private

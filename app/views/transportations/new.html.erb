@@ -1,14 +1,15 @@
 <h1>New Transportation</h1>
 <%= form_with model: @transportation do |f| %>
     <div>
-      <%= f.select :group_id, Group.all.collect { |x| [x.name, x.id] }, {:include_blank => 'Select One' } %><br />
+      <%= f.label :icon, class: 'transport-label' %><br />
+      <%= f.select :group_id, Group.all.collect { |x| [x.name, x.id] }, {:include_blank => 'Select One' } %>
     </div>
     <div class='transport-form'>
-      <%= f.label :name, class: 'transport-label' %><br />
+      <%= f.label :name, class: 'transport-label' %>
       <%= f.text_field :name, class: 'transport-input' %>
     </div>
     <div class='transport-form'>
-      <%= f.label :distance, class: 'transport-label' %><br />
+      <%= f.label :distance, class: 'transport-label' %>
       <%= f.text_field :distance, class: 'transport-input' %>
     </div>
     <div class="">

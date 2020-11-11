@@ -21,8 +21,7 @@
       <td><%= t.name %></td>
       <td><%= t.distance %></td>
       <td><%= t.created_at %></td>
-      <td><%= t.creator %></td>
-      <td><%= link_to "Show details", transportation_path(t) %></td>
+      <td><%= t.user.username %></td>
     <% end %> 
  </tbody>
 </table>

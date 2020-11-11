@@ -16,6 +16,6 @@
       <%= f.select :user_id, User.all.collect { |x| [x.username, x.id] }, {:include_blank => 'Select One' } %><br />
     </div>
     <div class="">
-      <%= f.submit 'Create', class: 'new-transport' %>
+      <%= f.submit 'Update', class: 'new-transport' %>
     </div>
 <% end %>
