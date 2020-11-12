@@ -10,7 +10,7 @@ end
 RSpec.describe Group, type: :model do
   before :each do
     @user = User.create(first_name: 'Daniel', last_name: 'Eze', email: 'd.email@example.com',
-                      username: 'melody')
+                        username: 'melody')
     @transportation = Transportation.create(user_id: @user.id, group_id: 2, name: 'Bus', distance: 10)
   end
 

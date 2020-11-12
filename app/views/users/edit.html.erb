@@ -1,0 +1,31 @@
+<h1>Update Records</h1>
+<%= form_with model: @user, class: 'new-user' do |f| %>
+    <% if @user.errors.any? %>
+      <% @user.errors.full_messages.each do |msg| %>
+         <div class='alert alert-danger><%= msg %></div>
+      <% end %>
+    <% end %>
+    <div class='user-form'>
+      <%= f.label :first_name, class: 'user-label' %><br />
+      <%= f.text_field :first_name, class: 'user-input', placeholder: 'Enter your first name' %>
+    </div>
+    <div class='user-form'>
+      <%= f.label :last_name, class: 'user-label' %><br />
+      <%= f.text_field :last_name, class: 'user-input', placeholder: 'Enter your last name' %>
+    </div>
+    <div class='user-form'>
+       <%= f.label :email, class: 'user-label' %><br />
+       <%= f.email_field :email, class: 'user-input', placeholder: 'Your email' %>
+    </div>
+    <div class='user-form'>
+      <%= f.label :username, class: 'user-label' %><br />
+      <%= f.text_field :username, class: 'user-input', placeholder: 'Enter your username' %>
+    </div>
+    <span class='group-form'>
+      <%= 'Add Profile Picture' %>
+      <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
+    </span>
+    <div class="action">
+      <%= f.submit 'Update', class: 'update' %>
+    </div>
+<% end %>

@@ -25,12 +25,10 @@ RSpec.describe User, type: :model do
     expect(user).to be_valid
   end
   it 'checks email uniquness' do
-    # user2 = User.create(first_name: 'Julian', last_name: 'Umair', email: 'd.email@example.com', username: 'dencopa')
     user3 = User.create(first_name: 'Dan', last_name: 'Umeh', email: 'd.email@example.com', username: 'doncope')
     expect(user3.valid?).to eql(false)
   end
   it 'checks username uniqueness' do
-    # user2 = User.create(first_name: 'Julian', last_name: 'Umair', email: 'y.email@example.com', username: 'dencos')
     user3 = User.create(first_name: 'Dan', last_name: 'Umeh', email: 'd.email@example.com', username: 'dencos')
     expect(user3.valid?).to eql(false)
   end

@@ -10,10 +10,10 @@
   </head>
   <body>
   <%= render 'layouts/header' %>
+  <p class="flash"><%= flash.notice %></p>
   <div class="container">
-    <p class="flash"><%= flash.notice %></p>
-    <%= yield %>
-    <%= render 'layouts/footer' %>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
   </div>
   </body>
 </html>

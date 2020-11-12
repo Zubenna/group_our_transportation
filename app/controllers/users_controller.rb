@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @external_transportations = current_user.transportations.order('created_at DESC')
     @external_sum = 0
     @external_transportations.each do |t|
-      @external_sum += t.distance if t.group == nil
+      @external_sum += t.distance if t.group.nil?
     end
   end
 
@@ -18,12 +18,27 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.picture.attach(params[:user][:picture])
     if @user.save
       flash[:notice] = 'User created successfuly. Please, login'
       redirect_to '/'
     else
       flash[:notice] = 'Something went wrong'
       render('new')
+    end
+  end
+
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update_attributes(user_params)
+      flash[:notice] = 'User updated successfuly'
+      redirect_to user_path(@user)
+    else
+      render(new)
     end
   end
 

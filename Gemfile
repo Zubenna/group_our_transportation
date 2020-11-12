@@ -5,19 +5,19 @@ ruby '2.7.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'active_storage_validations', '0.8.2'
-gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'image_processing', '1.12.1'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass'
-gem 'sass-rails', '>= 6'
 gem 'carrierwave'
+gem 'sass-rails', '>= 6'
 gem 'fog', '1.38.0'
-gem 'mini_magick'
 gem 'bootstrap-will_paginate'
+gem 'mini_magick'
 gem 'will_paginate'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
@@ -45,9 +45,9 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'listen', '~> 3.2'
+   gem 'listen', '~> 3.2'
   gem 'web-console', '>= 3.3.0'
-
+  
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -64,4 +64,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

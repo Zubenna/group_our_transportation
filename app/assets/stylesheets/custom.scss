@@ -182,5 +182,30 @@ p {
 .user-option-ul li {
   text-decoration: none;
 }
-    
+
+//Error Form
+
+#error_explanation {
+  color: red;
+  ul {
+  color: red;
+  margin: 0 0 30px 0;
+  }
+}
+  .field_with_errors {
+  @extend .has-error;
+  .form-control {
+  color: $state-danger-text;
+  }
+}
+
+//Flash
+
+.flash {
+  text-align: center;
+  font-family: 'Proxima nova light';
+  margin-top: 5px;
+  color: #3778c2;
+  font-size: 2em;
+}
     
