@@ -12,7 +12,7 @@ RSpec.describe 'User', type: :feature do
 
   it 'It should sign in a user' do
     @user = User.create(first_name: 'Daniel', last_name: 'Eze', email: 'd.email@example.com',
-                      username: 'melody')
+                        username: 'melody')
     visit visit root_path
     click_link 'Log in'
     fill_in 'username', with: 'melody'

@@ -7,19 +7,18 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
-
 RSpec.describe Group, type: :model do
   before :each do
-  @user = User.create(first_name: 'Daniel', last_name: 'Eze', email: 'd.email@example.com',
+    @user = User.create(first_name: 'Daniel', last_name: 'Eze', email: 'd.email@example.com',
                       username: 'melody')
-  @transportation = Transportation.create(user_id: @user.id, group_id: 2, name: 'Bus', distance: 10)
+    @transportation = Transportation.create(user_id: @user.id, group_id: 2, name: 'Bus', distance: 10)
   end
-  
+
   describe 'associations' do
     it { should belong_to(:user) }
     it { should have_many(:transportations) }
   end
-  
+
   describe 'validations' do
     it { should validate_presence_of(:icon) }
     it { should validate_presence_of(:name) }
