@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:notice] = 'User created successfuly. Pease, login'
+      flash[:notice] = 'User created successfuly. Please, login'
       redirect_to '/'
     else
       flash[:notice] = 'Something went wrong'
