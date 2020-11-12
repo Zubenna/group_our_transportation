@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def new
-    @page_title = 'User Login'  
+    @page_title = 'User Login'
   end
 
   def index

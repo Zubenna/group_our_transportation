@@ -6,7 +6,5 @@ module ApplicationHelper
     else
       page_title + '|' + default_title
     end
-  end   
+  end 
 end
-
-# 'Group Our Transportation App'

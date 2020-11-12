@@ -24,8 +24,7 @@ class TransportationsController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
   def destroy
     @transportation = Transportation.find(params[:id])
@@ -47,8 +46,9 @@ class TransportationsController < ApplicationController
       render('edit')
     end
   end
-  
+
   private
+
   def transportation_params
     params.require(:transportation).permit(:name, :distance, :group_id, :user_id, :creator)
   end

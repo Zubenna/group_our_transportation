@@ -1,3 +1,2 @@
 module TransportationsHelper
-  
 end

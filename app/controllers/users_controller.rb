@@ -3,9 +3,7 @@ class UsersController < ApplicationController
     @external_transportations = current_user.transportations.order('created_at DESC')
     @external_sum = 0
     @external_transportations.each do |t|
-      if t.group == nil
-      @external_sum += t.distance
-      end
+      @external_sum += t.distance if t.group == nil
     end
   end
 
@@ -29,8 +27,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def delete
-  end
+  def delete; end
 
   private
 
