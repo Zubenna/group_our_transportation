@@ -1,21 +1,21 @@
 <div class="row">
-  <aside class="col-md-4">
+  <aside class="col-md-4 profile-aside">
     <section class="user_info">
     <div class='profile-pic'>
-      <%= image_tag @user.picture.variant(resize_to_limit: [60, 60]) if @user.picture.attached? %></td>
+      <span id='round-pic'><%= image_tag @user.picture.variant(resize_to_limit: [100, 100]) if @user.picture.attached? %></span>
     </div>
-    <h3>
+    <h4>
     <%= @user.first_name %>
     <%= @user.last_name %>
-    </h3>
+    </h4>
     </section>
     <section>
-    <div class='user-options col-md-8'>
-    <%= render 'layouts/user_settings' %>
-    </div>
+      <div class='user-options col-md-8'>
+      <%= render 'layouts/user_settings' %>
+      </div>
     </section>
   </aside>
-  <div class='user-options col-md-8'>
+  <div class='profile-right' col-md-8'>
     <%= render 'layouts/user_options' %>
   </div>
 </div>

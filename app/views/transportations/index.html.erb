@@ -1,19 +1,22 @@
-<h1>User Transportation Log</h1>
-<div class='sum_in_km'>
-<h3>Total Distance</h3>
-<h3><%= @sum.to_s + 'KM'%></h3>
-</div>
-<div class='list-transportation'>
-<table class="table table-responsive">
+<h1 class='special-h1'>User Transportation Log</h1>
+  <div class='sum_in_km' >
+     <div class='sum-box'>
+       <h3>Total Distance</h3>
+       <h3 class='total-sum'><%= @sum.to_s + 'KM' %></h3>
+     </div>
+  </div>
+<div>
+ <div class='list-transportation'>
+ <table class="table table-responsive row-box ">
     <thead>
     <tr>
       <th>Icon</th>
-      <th>Transportation Means</th>
+      <th>Transportation Description</th>
       <th>Distance (KM)</th>
-      <th>Transport Date</th>
+      <th>Transportation Date</th>
       <th></th>
     </tr>
-  </thead>
+    </thead>
   <tbody>
     <tr><% @transportations.each do |t| %></tr>
       <% if t.group != nil %>
@@ -28,5 +31,8 @@
     <% end %> 
  </tbody>
 </table>
-<h3><%= link_to 'Add Transportation', new_transportation_path %></h3>
+</div>
+<div class='table-green'>
+<h3><%= link_to 'Add Transportation', new_transportation_path, class: 'table-h3' %></h3>
+</div>
 </div>
