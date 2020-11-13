@@ -1,6 +1,6 @@
-<h1>List of Groups</h1>
-<div class='list-group'>
-<table class="table table-responsive">
+<h1 class='special-h1'>List of Groups</h1>
+<div class='list-transportation'>
+<table class="table table-responsive row-box">
     <thead>
     <tr>
       <th>Icon</th>
@@ -11,12 +11,14 @@
   <tbody>
     <tr><% @groups.each do |t| %></tr>
       <td><%= image_tag t.icon.variant(resize_to_limit: [60, 60]) if t.icon.attached? %></td>
-      <td><%= link_to t.name, group_path(t.id) %></td>
+      <td><%= link_to t.name, group_path(t.id), class: 'group-name' %></td>
       <td><%= t.created_at %></td>
       <td><%= link_to 'Edit', edit_group_path(t.id) %> |
       <%= link_to 'Delete', group_path(t), method: :delete, data: { confirm: 'Are you really sure?' } %>
     <% end %> 
   </tbody>
 </table>
-<h3><%= link_to 'Create New', new_group_path %></h3>
+</div>
+<div class='table-green'>
+<h3><%= link_to 'Create New', new_group_path, class: 'table-h3' %></h3>
 </div>

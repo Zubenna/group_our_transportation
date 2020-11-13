@@ -7,5 +7,5 @@ class Group < ApplicationRecord
   validates :icon, content_type: { in: %w[image/jpeg image/gif image/png],
                                    message: 'must be a valid image format' },
                    size: { less_than: 2.megabytes,
-                           message: 'should be less than 2MB' }                     
+                           message: 'should be less than 2MB' }                  
 end

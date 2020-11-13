@@ -13,11 +13,11 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass'
-gem 'carrierwave'
 gem 'bootstrap-will_paginate'
+gem 'carrierwave'
 gem 'fog', '1.38.0'
-gem 'sass-rails', '>= 6'
 gem 'mini_magick'
+gem 'sass-rails', '>= 6'
 gem 'will_paginate'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'

@@ -1,10 +1,13 @@
-<h1><%= @group.name %></h1>
+<h1 class='special-h1'><%= @group.name %></h1>
 <div class='sum_in_km'>
-  <h3>Total Distance</h3>
-  <h3><%= @group_sum.to_s + 'KM'%></h3>
+   <div class='sum-box'>
+     <h3>Total Distance</h3>
+     <h3><%= @group_sum.to_s + 'KM'%></h3>
+   </div>
 </div>
+<div>
 <div class='list-transportation'>
-<table class="table table-responsive">
+<table class="table table-responsive row-box">
     <thead>
     <tr>
       <th>Icon</th>
@@ -12,7 +15,6 @@
       <th>Distance (KM)</th>
       <th>Transport Date</th>
       <th>Creator</th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -25,5 +27,8 @@
     <% end %> 
  </tbody>
 </table>
-<h3><%= link_to 'Add Transportation', new_transportation_path %></h3>
+</div>
+<div class='table-green'>
+   <h3><%= link_to 'Add Transportation', new_transportation_path, class: 'table-h3' %></h3>
+</div>
 </div>
