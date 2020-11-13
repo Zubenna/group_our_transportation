@@ -73,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
- line-height: 1;
+  line-height: 1;
 }
 
 .special-h1 {
@@ -277,6 +277,12 @@ p {
   font-size: 2.5rem;
 }
 
+.user-option-ul li {
+  padding-top: 2rem;
+  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
+
 .user-options ul li {
   font-size: 1.5rem;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
@@ -297,19 +303,15 @@ p {
   border-top-right-radius: 5px;
 }
 
-.user-option-ul li {
-  padding-top: 2rem;
-  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 3rem;
- }
-
 .user-option-ul {
   text-align: left;
   margin-left: 10rem;
 }
 
 /* Error Form */
+
 /*
+
 #error_explanation {
   color: red;
   ul {
@@ -323,7 +325,9 @@ p {
   color: $state-danger-text;
   }
 }
+
 */
+
 /* Flash */
 
 .flash-box {
@@ -378,6 +382,6 @@ p {
 
 .form-label {
   font-size: 2rem;
-  margin-right: 3rem; 
+  margin-right: 3rem;
 }
     
