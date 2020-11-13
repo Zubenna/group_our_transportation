@@ -2,10 +2,10 @@
 @import "bootstrap";
 
 @font-face {
-    font-family: 'Proxima nova bold';
-    src: url('/app/assets/fonts/FontsFree-Net-Proxima-Nova-Bold.otf');
-    font-family: 'Proxima nova light';
-    src: url('/app/assets/fonts/FontsFree-Net-Proxima-Nova-Light.otf');
+  font-family: 'Proxima nova bold';
+  src: url('/app/assets/fonts/FontsFree-Net-Proxima-Nova-Bold.otf');
+  font-family: 'Proxima nova light';
+  src: url('/app/assets/fonts/FontsFree-Net-Proxima-Nova-Light.otf');
 }
 // #434b54  -- dark grey text color
 // #3778c2 -- blue main color
@@ -33,7 +33,7 @@ section {
   padding-top: 10rem;
 }
 
-.main-body { 
+.main-body {
   border: #3778c2 1px solid;
   padding: 0;
   min-height: 50.7rem;
@@ -54,21 +54,17 @@ footer small {
   color: #fff;
 }
 
-.footer-text, 
+.footer-text,
 .footer small a {
   color: #fff;
 }
 
 textarea {
- resize: vertical;
+  resize: vertical;
 }
 
-.center{
+.center {
   text-align: center;
-}
-
-.center h1 {
- margin-bottom: 10px;
 }
 
 h1,
@@ -92,22 +88,26 @@ h1 {
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
   font-size: 2.5em;
   padding: 1rem;
-  margin: 0;
+  // margin: 0;
   height: 6rem;
   line-height: 1;
 }
 
+.center h1 {
+  margin-bottom: 10px;
+}
+
 h2 {
- font-size: 2.2em;
- letter-spacing: -1px;
- margin-bottom: 30px;
- text-align: center;
- font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
- font-size: 1.1em;
- line-height: 1.7em;
+  font-size: 1.1em;
+  line-height: 1.7em;
 }
 
 #logo {
@@ -122,7 +122,7 @@ p {
   font-weight: bold;
 }
 
-/*Sign in form*/
+/* Sign in form */
 
 .new-user {
   width: 40%;
@@ -147,7 +147,8 @@ p {
   box-shadow: none;
 }
 
-.user-label, .action {
+.user-label,
+.action {
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
   color: #fff;
   font-size: 2rem;
@@ -178,7 +179,7 @@ p {
 }
 
 .login-page {
-  margin: 0 auto; 
+  margin: 0 auto;
   width: 40%;
 }
 
@@ -200,7 +201,7 @@ p {
   text-align: center;
 }
 
-/* Transport Log*/
+/* Transport Log */
 .sum_in_km {
   padding: 2rem;
   color: #434b54;
@@ -214,7 +215,7 @@ p {
 .sum-box {
   width: 100%;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .list-transportation {
@@ -251,7 +252,7 @@ p {
   font-size: 2rem;
 }
 
-/* User Profile*/
+/* User Profile */
 .user-option-ul,
 #set-user {
   list-style: none;
@@ -296,19 +297,19 @@ p {
   border-top-right-radius: 5px;
 }
 
+.user-option-ul li {
+  padding-top: 2rem;
+  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+ }
+
 .user-option-ul {
   text-align: left;
   margin-left: 10rem;
 }
 
-.user-option-ul li {
- padding-top: 2rem;
- font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
- font-size: 3rem;
-}
-
 /* Error Form */
-
+/*
 #error_explanation {
   color: red;
   ul {
@@ -322,7 +323,7 @@ p {
   color: $state-danger-text;
   }
 }
-
+*/
 /* Flash */
 
 .flash-box {
@@ -343,7 +344,7 @@ p {
   margin: 0;
 }
 
-/*New Transport and Group Form */
+/* New Transport and Group Form */
 
 .new-trans-form {
   width: 30rem;
@@ -363,13 +364,15 @@ p {
   margin-left: 3rem;
 }
 
-.new-transport, .new-group {
+.new-transport,
+.new-group {
   width: 100%;
   margin-top: 1rem;
   font-size: 2rem;
 }
 
-.form-label, .form-input {
+.form-label,
+.form-input {
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
 }
 
