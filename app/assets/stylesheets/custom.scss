@@ -1,24 +1,30 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@font-face { 
-    font-family: 'Proxima nova bold'; src: url('/app/assets/fonts/FontsFree-Net-Proxima-Nova-Bold.otf');
-    font-family: 'Proxima nova light'; src: url('/app/assets/fonts/FontsFree-Net-Proxima-Nova-Light.otf'); 
+@font-face {
+    font-family: 'Proxima nova bold';
+    src: url('/app/assets/fonts/FontsFree-Net-Proxima-Nova-Bold.otf');
+    font-family: 'Proxima nova light';
+    src: url('/app/assets/fonts/FontsFree-Net-Proxima-Nova-Light.otf');
 }
 // #434b54  -- dark grey text color
 // #3778c2 -- blue main color
 // #5fb523 -- green second color
 section {
- overflow: auto;
+  overflow: auto;
 }
-.navbar, .new-user {
+
+.navbar,
+.new-user {
   background-color: #3778c2;
 }
+
 .menu-item {
   color: #fff;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
 }
+
 .jumbotron {
   background-color: #5fb523;
   width: 100%;
@@ -27,12 +33,13 @@ section {
   padding-top: 10rem;
 }
 
-.main-body{ 
+.main-body { 
   border: #3778c2 1px solid;
   padding: 0;
   min-height: 50.7rem;
   border-radius: 5px;
 }
+
 footer {
   height: 5rem;
   width: 100%;
@@ -47,7 +54,8 @@ footer small {
   color: #fff;
 }
 
-.footer-text, footer small a {
+.footer-text, 
+.footer small a {
   color: #fff;
 }
 
@@ -63,7 +71,12 @@ textarea {
  margin-bottom: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
  line-height: 1;
 }
 
@@ -73,15 +86,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
- letter-spacing: -2px;
- margin-bottom: 30px;
- text-align: center;
- font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
- font-size: 2.5em;
- padding: 1rem;
- margin: 0;
- height: 6rem;
- line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5em;
+  padding: 1rem;
+  margin: 0;
+  height: 6rem;
+  line-height: 1;
 }
 
 h2 {
@@ -98,15 +111,15 @@ p {
 }
 
 #logo {
- float: left;
- margin-right: 10px;
- font-size: 1.7em;
- font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
- color: #fff;
- text-transform: uppercase;
- letter-spacing: -1px;
- padding-top: 9px;
- font-weight: bold;
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
 }
 
 /*Sign in form*/
@@ -156,7 +169,8 @@ p {
   padding: 0.5rem;
 }
 
-.session-login, .login {
+.session-login,
+.login {
   height: 4rem;
   background-color: #3778c2;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
@@ -173,7 +187,8 @@ p {
   font-size: 1.5rem;
 }
 
-.login-label, .login {
+.login-label,
+.login {
   color: #fff;
   font-size: 2rem;
 }
@@ -252,8 +267,8 @@ p {
 .user_info {
   text-align: center;
   margin-top: 3rem;
- 
 }
+
 .user_info h4 {
   margin-top: 2rem;
   color: #fff;
@@ -268,7 +283,8 @@ p {
   margin-top: 1rem;
 }
 
-.set-user, .user-option-li {
+.set-user,
+.user-option-li {
   color: #fff;
 }
 
@@ -290,7 +306,6 @@ p {
  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
  font-size: 3rem;
 }
-
 
 /* Error Form */
 
@@ -315,6 +330,7 @@ p {
   margin: 0 auto;
   width: 50%;
 }
+
 .flash {
   text-align: center;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
@@ -361,6 +377,4 @@ p {
   font-size: 2rem;
   margin-right: 3rem; 
 }
-
-
     
