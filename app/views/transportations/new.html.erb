@@ -5,7 +5,7 @@
       <%= f.label :icon, class: 'form-label' %><br />
       <span class='span-t'><%= f.select :group_id, Group.all.collect { |x| [x.name, x.id] }, {:include_blank => 'Select One' } %></span>
     </div>
-    <div class='transport-form'>
+    <div class='transport-form' id = 't-name'>
       <%= f.label :name, class: 'form-label' %>
       <%= f.text_field :name, class: 'form-input' %>
     </div>
@@ -13,7 +13,7 @@
       <%= f.label :distance, class: 'form-label' %>
       <%= f.text_field :distance, class: 'form-input' %>
     </div>
-    <div class="">
+    <div>
       <%= f.submit 'Create Record', class: 'new-transport btn btn-primary' %>
     </div>
 <% end %>

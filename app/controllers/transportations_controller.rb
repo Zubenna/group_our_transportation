@@ -2,14 +2,15 @@ class TransportationsController < ApplicationController
   def new
     @page_title = 'Add New Transportation'
     @transportation = Transportation.new
-    @transportation.creator = current_user.username
-    @transportation.save
   end
 
   def index
     @page_title = 'List Transportation'
     @transportations = current_user.transportations.order('created_at DESC')
-    @sum = @transportations.sum(:distance)
+    @sum = 0
+    @transportations.each do |t|
+      @sum += t.distance  if t.group != nil
+    end
   end
 
   def create

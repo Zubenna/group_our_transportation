@@ -80,7 +80,6 @@ h6 {
 
 h1 {
   letter-spacing: -2px;
-  // margin-bottom: 30px;
   text-align: center;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
   font-size: 2.5em;
@@ -205,7 +204,8 @@ p {
   background-color: #fff;
 }
 
-.total-sum {
+.total-sum,
+.bold-distance {
   font-weight: bolder;
 }
 
@@ -219,6 +219,10 @@ p {
   background-color: #f2f2f2;
   padding: 2rem;
   min-height: 27rem;
+}
+
+.set-group-index {
+  min-height: 37rem;
 }
 
 .row-box {
@@ -244,7 +248,8 @@ p {
   padding-top: 3rem;
 }
 
-.group-name {
+.group-name,
+.user-picture {
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
 }
@@ -253,6 +258,10 @@ p {
 .user-option-ul,
 #set-user {
   list-style: none;
+}
+
+.user-picture {
+  color: #fff;
 }
 
 .profile-aside {
@@ -360,4 +369,8 @@ p {
 .form-label {
   font-size: 2rem;
   margin-right: 3rem;
+}
+
+#t-name {
+  margin:1rem 0;
 }

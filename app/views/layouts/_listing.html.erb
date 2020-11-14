@@ -20,7 +20,7 @@
       <% if t.group != nil %>
       <td><%= image_tag t.group.icon.variant(resize_to_limit: [50, 50]) if t.group.icon.attached? %></td>
       <td><%= t.name %></td>
-      <td><%= t.distance %></td>
+      <td class='bold-distance'><%= t.distance %></td>
       <td><%= t.created_at %></td>
       <td><%= link_to 'Edit', edit_transportation_path(t.id) %> |
       <%= link_to 'Delete', transportation_path(t), method: :delete, data: { confirm: 'Are you really sure?' } %>
