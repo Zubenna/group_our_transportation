@@ -9,7 +9,7 @@ class TransportationsController < ApplicationController
     @transportations = current_user.transportations.order('created_at DESC')
     @sum = 0
     @transportations.each do |t|
-      @sum += t.distance  if t.group != nil
+      @sum += t.distance unless t.group.nil?
     end
   end
 
