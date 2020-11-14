@@ -1,15 +1,17 @@
-<h1>Edit Group</h1>
+<h1 class='special-h1'>Edit Group</h1>
+<div class='new-trans-form'>
 <%= form_with model: @group, html: { multipart: true } do |f| %>
-    <span class='group-form'>
-      <%= f.label :icon, class: 'group-label' %>
-      <%= f.file_field :icon, accept: 'image/jpeg,image/gif,image/png' %>
-    </span>
-    <div class='group-form'>
-      <%= f.label :name, class: 'group-label' %><br />
+    <div class='transport-form'>
+      <%= f.label :icon,  class: 'form-label' %>
+      <span class='span-g' ><%= f.file_field :icon, accept: 'image/jpeg,image/gif,image/png' %></span>
+    </div>
+    <div class='transport-form'>
+      <%= f.label :name, class: 'form-label' %><br />
       <%= f.text_field :name, class: 'group-input' %>
     </div>
     <div class="group-form">
-      <%= f.submit 'Update Group', class: 'new-group'%>
+      <%= f.submit 'Update Group', class: 'new-group btn btn-primary' %>
     </div>
 <% end %>
+</div>
 

@@ -52,8 +52,8 @@ rspec
 ## Run the server
 - While in the project root, start rails server with the command 'rails server'.
 - In your browser, type http://localhost:3000 to access the app.
-- You can now sign up or Log in,to test all features.
-- Example; Log in with username,  melody or franco.
+- You can now sign up or Log in, to test all features.
+- Example; Log in with username, testerone or testertwo.
 
 ## Live Version
 - Launch App: ()
