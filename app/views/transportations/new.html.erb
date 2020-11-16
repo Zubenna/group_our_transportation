@@ -1,6 +1,6 @@
 <h1 class='special-h1'>New Transportation</h1>
 <div class='new-trans-form' >
-<%= form_with model: @transportation do |f| %>
+<%= form_with model: @transportation, local: true do |f| %>
     <div class='transport-form'>
       <%= f.label :icon, class: 'form-label' %><br />
       <span class='span-t'><%= f.select :group_id, Group.all.collect { |x| [x.name, x.id] }, {:include_blank => 'Select One' } %></span>

@@ -1,10 +1,5 @@
 <h1>Update Records</h1>
 <%= form_with model: @user, class: 'new-user' do |f| %>
-    <% if @user.errors.any? %>
-      <% @user.errors.full_messages.each do |msg| %>
-         <div class='alert alert-danger><%= msg %></div>
-      <% end %>
-    <% end %>
     <div class='user-form'>
       <%= f.label :first_name, class: 'user-label' %><br />
       <%= f.text_field :first_name, class: 'user-input', placeholder: 'Enter your first name' %>

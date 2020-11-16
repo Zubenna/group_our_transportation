@@ -1,17 +1,18 @@
 ## Group Our Transportation App (Rails Capstone Project)
 
-This project entails building an online appllication where a user or group logs all the distances covered in Kilometer(KM) within a particular period for various means of transportations. Each means of transportation is set up as a group that will contain record of movements made within such group. User can also create records for each particular means of transportation used. This include recording in particular, the distance covered by in that movement in KM, the date and time of movement, the creator of the record and the current total of distance in KM displayed at the top right corner of the app page. User must create account and log in before creating records. This project employed the implementation of rails MVC architecture, utilising model, controller, view, routes, associations, partials and styling knowledge in building a rails app.
+This project entails building an online application where a user or group logs all the distances covered in Kilometer(KM) within a particular period for various means of transportations. Each means of transportation is set up as a group that will contain a record of movement made within such a group. Users can also create records for each particular means of transportation used. This includes recording in particular, the distance covered by that movement in KM, the date and time of movement, the creator of the record, and the current total distance in KM displayed at the top right corner of the app page. Users must create an account and log in before creating records. This project employed the implementation of rails MVC architecture, utilizing the model, controller, view, routes, associations, partials, and styling knowledge in building a rails app.
 
 ## Features 
-- User can sign up into the app.
-- User can log in after sign up. 
-- User can create a new transportation log.
-- User can create a new transportation group.
-- User can edit or delete transportation or group record.
-- Logged in user will see all transportation logs he created 
-  arranged according to most recent record.
+- Users can sign up in the app.
+- Users can log in after sign up. 
+- Users can create a new transportation log.
+- Users can create a new transportation group.
+- Users can edit or delete transportation or group records.
+- Logged in user will see all transportation logs he 
+  created arranged according to the most recent record.
 - Logged in user will see all logs he created but were not assigned to a group.
 - Logged in User will see all groups arranged alphabetically.
+
 
 ## Project SetUp/Installation
 
@@ -71,7 +72,7 @@ rspec
 
 ##  Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Zubenna/group_our_transportation/issues)
 

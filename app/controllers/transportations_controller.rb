@@ -6,7 +6,7 @@ class TransportationsController < ApplicationController
 
   def index
     @page_title = 'List Transportation'
-    @transportations = current_user.transportations.order('created_at DESC')
+    @transportations = current_user.transportations.transportation_list
     @sum = 0
     @transportations.each do |t|
       @sum += t.distance unless t.group.nil?
@@ -21,7 +21,7 @@ class TransportationsController < ApplicationController
       redirect_to user_path(@user)
     else
       flash[:notice] = 'Something is wrong'
-      render('new')
+      render 'new'
     end
   end
 
@@ -44,7 +44,7 @@ class TransportationsController < ApplicationController
       flash[:notice] = 'Record updated successfuly'
       redirect_to transportations_path
     else
-      render('edit')
+      render 'edit'
     end
   end
 

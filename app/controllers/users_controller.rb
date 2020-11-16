@@ -1,11 +1,5 @@
 class UsersController < ApplicationController
-  def index
-    @external_transportations = current_user.transportations.order('created_at DESC')
-    @external_sum = 0
-    @external_transportations.each do |t|
-      @external_sum += t.distance if t.group.nil?
-    end
-  end
+  def index; end
 
   def show
     @user = User.find(params[:id])
@@ -23,8 +17,8 @@ class UsersController < ApplicationController
       flash[:notice] = 'User created successfuly. Please, login'
       redirect_to '/'
     else
-      flash[:notice] = 'Something went wrong'
-      render('new')
+      flash.now[:notice] = 'Something went wrong'
+      render 'new'
     end
   end
 
@@ -38,7 +32,8 @@ class UsersController < ApplicationController
       flash[:notice] = 'User updated successfuly'
       redirect_to user_path(@user)
     else
-      render(new)
+      flash.now[:notice] = 'Something went wrong'
+      render 'new'
     end
   end
 

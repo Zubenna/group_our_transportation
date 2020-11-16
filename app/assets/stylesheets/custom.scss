@@ -39,11 +39,14 @@ section {
 }
 
 footer {
-  height: 5rem;
-  width: 100%;
+  height: 4rem;
   background-color: #3778c2;
   color: #fff;
   padding: 0 2rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 footer small {
@@ -135,6 +138,11 @@ p {
 }
 
 .user-input {
+  font-family:'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+}
+
+.user-input {
   height: 3rem;
   border-radius: 2px;
   width: 60%;
@@ -198,6 +206,7 @@ p {
 }
 
 /* Transport Log */
+
 .sum_in_km {
   padding: 2rem;
   color: #434b54;
@@ -241,7 +250,7 @@ p {
 
 .table-green h3 {
   text-align: center;
-  height: 8rem;
+  height: 12rem;
   width: 100%;
   background-color: #5fb523;
   margin: 0;
@@ -255,6 +264,7 @@ p {
 }
 
 /* User Profile */
+
 .user-option-ul,
 #set-user {
   list-style: none;

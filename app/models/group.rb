@@ -8,4 +8,5 @@ class Group < ApplicationRecord
                                    message: 'must be a valid image format' },
                    size: { less_than: 2.megabytes,
                            message: 'should be less than 2MB' }
+  scope :order_group, -> { order('name') }
 end

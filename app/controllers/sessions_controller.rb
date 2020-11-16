@@ -7,6 +7,14 @@ class SessionsController < ApplicationController
     @page_title = 'Home'
   end
 
+  def external
+    @external_transportations = current_user.transportations.transportation_list
+    @external_sum = 0
+    @external_transportations.each do |t|
+    @external_sum += t.distance if t.group.nil?
+    end
+  end
+
   def create
     @user = User.find_by(username: params[:username])
     if @user
@@ -15,7 +23,7 @@ class SessionsController < ApplicationController
       session[:username] = @user.username
       redirect_to user_path(@user)
     else
-      flash[:notice] = 'Something is wrong'
+      flash.now[:notice] = 'Something went wrong'
       render 'new'
     end
   end
