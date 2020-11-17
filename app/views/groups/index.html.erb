@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr><% @groups.each do |t| %></tr>
+    <tr><% @groups.includes([:icon_attachment]).each do |t| %></tr>
       <td><%= image_tag t.icon.variant(resize_to_limit: [60, 60]) if t.icon.attached? %></td>
       <td><%= link_to t.name, group_path(t.id), class: 'group-name' %></td>
       <td><%= t.created_at %></td>

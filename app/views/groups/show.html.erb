@@ -18,7 +18,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr><% @transportations.each do |t| %></tr>
+    <tr><% @transportations.includes([:user]).each do |t| %></tr>
       <td><%= image_tag t.group.icon.variant(resize_to_limit: [50, 50]) if t.group.icon.attached? %></td>
       <td><%= t.name %></td>
       <td><%= t.distance %></td>
