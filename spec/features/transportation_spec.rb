@@ -24,4 +24,20 @@ RSpec.describe 'Transportation', type: :feature do
     click_button 'Create'
     expect(page).to have_content('Transportation created successfully')
   end
+  it 'User should not create external transportation' do
+    click_link 'All my ungrouped transportations'
+    click_link 'Add Transportation'
+    fill_in 'transportation[name]', with: ''
+    fill_in 'transportation[distance]', with: 10
+    click_button 'Create'
+    expect(page).to have_content('Something is wrong')
+  end
+  it 'User should create transportation' do
+    click_link 'All my transportations'
+    click_link 'Add Transportation'
+    fill_in 'transportation[name]', with: ''
+    fill_in 'transportation[distance]', with: ''
+    click_button 'Create'
+    expect(page).to have_content('Something is wrong')
+  end
 end

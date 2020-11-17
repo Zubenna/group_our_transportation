@@ -15,7 +15,7 @@ class GroupsController < ApplicationController
       flash[:notice] = 'Group added successfully'
       redirect_to groups_path(@group)
     else
-      flash[:notice] = 'Something is wrong'
+      flash[:notice] = 'Something is wrong, group not created'
       render 'new'
     end
   end

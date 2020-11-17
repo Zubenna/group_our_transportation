@@ -138,17 +138,14 @@ p {
 }
 
 .user-input {
-  font-family:'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.8rem;
-}
-
-.user-input {
   height: 3rem;
   border-radius: 2px;
   width: 60%;
   line-height: 5px;
   padding: 1rem;
   box-shadow: none;
+  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
 }
 
 .user-label,
