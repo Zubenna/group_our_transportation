@@ -1,21 +1,20 @@
-<h1>Edit Transportation</h1>
-<%= form_with model: @transportation do |f| %>
+<h1 class='special-h1'>Edit Transportation</h1>
+<div class='new-trans-form' >
+<%= form_with model: @transportation, local: true do |f| %>
+    <div class='transport-form'>
+      <%= f.label :icon, class: 'form-label' %><br />
+      <span class='span-t'><%= f.select :group_id, Group.all.collect { |x| [x.name, x.id] }, {:include_blank => 'Select One' } %></span>
+    </div>
+    <div class='transport-form' id = 't-name'>
+      <%= f.label :name, class: 'form-label' %>
+      <%= f.text_field :name, class: 'form-input' %>
+    </div>
+    <div class='transport-form'>
+      <%= f.label :distance, class: 'form-label' %>
+      <%= f.text_field :distance, class: 'form-input' %>
+    </div>
     <div>
-      <%= f.select :group_id, Group.all.collect { |x| [x.name, x.id] }, {:include_blank => 'Select One' } %><br />
-    </div>
-    <div class='transport-form'>
-      <%= f.label :name, class: 'transport-label' %><br />
-      <%= f.text_field :name, class: 'transport-input' %>
-    </div>
-    <div class='transport-form'>
-      <%= f.label :distance, class: 'transport-label' %><br />
-      <%= f.text_field :distance, class: 'transport-input' %>
-    </div>
-    <div class='transport-form'>
-      <%= f.label :creator, class: 'transport-label' %><br />
-      <%= f.select :user_id, User.all.collect { |x| [x.username, x.id] }, {:include_blank => 'Select One' } %><br />
-    </div>
-    <div class="">
-      <%= f.submit 'Update', class: 'new-transport' %>
+      <%= f.submit 'Create Record', class: 'new-transport btn btn-primary' %>
     </div>
 <% end %>
+</div>
