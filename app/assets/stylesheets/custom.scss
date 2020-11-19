@@ -8,38 +8,53 @@
   src: url('/app/assets/fonts/FontsFree-Net-Proxima-Nova-Light.otf');
 }
 
-section {
-  overflow: auto;
+/* App Cover */
+
+body, 
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar,
-.new-user {
-  background-color: #3778c2;
-}
+// #logo {
+//   padding: 2rem 10rem 0 0;
+//   font-size: 1.3rem;
+//   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+//   color: #fff;
+//   font-weight: bold;
+// }
 
-.menu-item {
-  color: #fff;
-  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  font-size: 2rem;
+// .header-item {
+//   color: #fff;
+// }
+
+// .navbarfixed-top {
+//   background-color: #3778c2;
+//   height: 4rem;
+//   padding-top: 1rem;
+// }
+
+.home-list {
+  list-style: none;
+  display: flex;
 }
 
 .jumbotron {
-  background-color: #5fb523;
+  background-color: #fff;
   width: 100%;
-  height: 50.5rem;
-  margin: 0;
-  padding-top: 10rem;
+  border: 6px solid #5fb523;
+  border-radius: 8px;
+  margin-top: 2rem;
 }
 
-.main-body {
-  border: #3778c2 1px solid;
-  padding: 0;
-  min-height: 50.7rem;
-  border-radius: 5px;
+.home-cover {
+  width: 90%;
+  margin: 0 auto;
 }
 
 footer {
-  height: 4rem;
+  height: 6rem;
   background-color: #3778c2;
   color: #fff;
   padding: 0 2rem;
@@ -59,12 +74,23 @@ footer small {
   color: #fff;
 }
 
-textarea {
-  resize: vertical;
-}
-
 .center {
   text-align: center;
+}
+
+.footer-nav {
+  list-style: none;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.2rem;
+}
+
+.footer-nav li:hover {
+  background-color: #fff;
+  color: #434b43;
+  padding: 0.6rem;
+  font-size: 1rem;
 }
 
 h1,
@@ -76,52 +102,274 @@ h6 {
   line-height: 1;
 }
 
-.special-h1 {
-  background-color: #3778c2;
-  color: #fff;
-}
-
 h1 {
-  letter-spacing: -2px;
   text-align: center;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  font-size: 2.5em;
-  padding: 1rem;
-  margin: 0;
-  height: 6rem;
-  line-height: 1;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  padding: 2.5rem 0;
 }
 
 h2 {
-  font-size: 2.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #434b43;
   text-align: center;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+.home-link {
+  padding-right: 2rem;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
+  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
 }
 
-/* Sign in form */
+.login, 
+.sign-up {
+  background-color:#5fb523;
+  width: 100%;
+  color: #fff;
+  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  height: 5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.login {
+  margin-top: 1rem;
+}
+
+.sign-up {
+  margin-top: 2rem;
+}
+
+/* Profile Page */
+
+.user-option-ul,
+#set-user {
+  list-style: none;
+}
+
+.user-picture {
+  color: #fff;
+}
+
+.profile-box {
+  background-color: #3778c2;
+  padding: 0 3rem 3rem 3rem;
+  height: 58rem;
+  margin: 0;
+}
+
+.circle-me {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.shape-icon {
+  color: #fff;
+  max-width: 5rem;
+  max-height: 5rem;
+  padding: 1.2rem;
+}
+
+.user_info {
+  height: 15rem;
+  width: 15rem;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+.user_info h4 {
+  margin-top: 1rem;
+  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+.log-out {
+  color: #fff;
+  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.7rem;
+  width: 100%;
+  height: 4rem;
+  background-color: #C52F24;
+  margin-top: 8rem;
+}
+
+.flash {
+  height: 1.5rem;
+  text-align: center;
+  color: #ffff00;
+  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  margin-left: 6.5rem;
+}
+
+#profile-pic {
+  margin-top: 2rem;
+}
+
+.option-box {
+  display: flex;
+}
+
+.option-box svg {
+  margin-top: 1.5rem;
+}
+
+.option-link {
+  margin-top: 1.9rem;
+}
+
+.user-option-li {
+  color: #fff;
+  margin-left: 1.5rem;
+  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2rem;
+}
+
+/* Transportation Log */
+
+.trans-header {
+  background-color: #3778c2;
+  padding: 2rem;
+  height: 11rem;
+  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+}
+
+.trans-head-one,
+.trans-head-two {
+  display: flex;
+  color: #fff;
+}
+
+.trans-head-one {
+  justify-content: space-between;
+}
+
+.trans-head-two {
+  justify-content: space-between;
+}
+
+.bi-list,
+.bi-search {
+  margin-top:1rem;
+}
+
+.trans-list-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.trans-head-three {
+  display: flex;
+  // margin-left: 20rem;
+  justify-content: space-between;
+}
+
+.to-profile {
+  color: #fff;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+#most-recent,
+#most-ancient {
+  font-size: 1.6rem;
+}
+
+#most-recent {
+  color: #f2f2f2;
+}
+
+#most-ancient {
+  color:  #b3b3b3;
+}
+
+
+.sum_in_km {
+  padding: 2rem;
+  color: #434b54;
+  background-color: #fff;
+}
+
+.total-sum,
+.bold-distance,
+.ext-sum {
+  font-weight: bolder;
+}
+
+.total-sum,
+.ext-sum{
+   font-size: 2rem;
+}
+
+.sum-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-transportation {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  min-height: 27rem;
+}
+
+.row-box {
+  background-color: #fff;
+}
+
+.table tr {
+  border-bottom: #f2f2f2 10px solid;
+}
+
+.table-h3 {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1rem;
+}
+
+.table-green h3 {
+  text-align: center;
+  height: 10rem;
+  width: 100%;
+  background-color: #5fb523;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+// .group-name,
+// .user-picture {
+//   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+//   font-size: 2rem;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+// Sign in form 
 
 .new-user {
   width: 40%;
@@ -163,7 +411,7 @@ p {
   padding: 0.5rem;
 }
 
-/* Login Form */
+//  Login Form 
 
 .session-login {
   display: flex;
@@ -202,7 +450,7 @@ p {
   text-align: center;
 }
 
-/* Transport Log */
+// Transport Log
 
 .sum_in_km {
   padding: 2rem;
@@ -260,7 +508,7 @@ p {
   font-size: 2rem;
 }
 
-/* User Profile */
+// User Profile 
 
 .user-option-ul,
 #set-user {
@@ -321,7 +569,7 @@ p {
   margin-left: 10rem;
 }
 
-/* Flash */
+//  Flash 
 
 .flash-box {
   height: 4rem;
@@ -341,7 +589,7 @@ p {
   margin: 0;
 }
 
-/* New Transport and Group Form */
+// New Transport and Group Form 
 
 .new-trans-form {
   width: 30rem;
@@ -381,3 +629,5 @@ p {
 #t-name {
   margin: 1rem 0;
 }
+
+*/

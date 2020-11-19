@@ -1,19 +1,11 @@
-<header class="navbar navbarfixed-top">
-<div class="container">
-<%= link_to "Group Our Transport App", '#', id: "logo" %>
+<header class="navbarfixed-top">
 <nav>
-  <ul class="nav navbar-nav navbar-right">
-    <% if current_user? %>
-    <li><%= link_to current_user.username, user_path(current_user), class: 'menu-item' %></li>
-    <li><%= link_to 'Log Out', '/logout', class: 'menu-item', method: :delete %></li>
-    <% end %>
-    <li><%= link_to 'Help', '#', class: 'menu-item' %></li>
-    <% if !current_user? %>
-    <li><%= link_to 'Home', '/', class: 'menu-item' %></li>
-    <li><%= link_to 'Log in', login_path, class: 'menu-item' %></li>
-    <% end %>
-  </ul>
+<ul class="home-list">
+  <% if !current_user? %>
+  <li><%= link_to "Group Our Transportation App", '#', id: "logo" %></li>
+  <li><%= link_to 'Home', '/', class: 'home-link' %></li>
+  <% end %>
+</ul>
 </nav>
-</div>
 </header>
         

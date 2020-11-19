@@ -1,4 +1,11 @@
-  <div class="center jumbotron"><h1>Welcome to Group Our Transport App</h1>
-    <h2>This is the home page for this Application </h2>
-    <%= link_to "Sign up now!", new_user_path, class: "btn btn-lg btn-primary" %>
+  <div class='home-cover'>
+  <div class=" jumbotron">
+  <span class="flash"><%= flash.notice %></span>
+    <h1>Welcome to Group Our Transportation App</h1>
+    <h2>Group and Track distances you covered using different means of transportation</h2>
+  </div>
+  <div>
+    <%= link_to 'Log in', login_path, class: 'btn btn-lg btn login' %><br />
+    <%= link_to 'Sign up now!', new_user_path, class: 'btn btn-lg sign-up' %>
+  </div>
   </div>

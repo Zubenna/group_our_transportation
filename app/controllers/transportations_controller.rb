@@ -8,7 +8,7 @@ class TransportationsController < ApplicationController
     @page_title = 'List Transportation'
     @transportations = current_user.transportations.transportation_list
     @sum = 0
-    @transportations.includes([:group]).each do |t|
+    @transportations.each do |t|
       @sum += t.distance unless t.group.nil?
     end
   end

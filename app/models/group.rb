@@ -1,5 +1,6 @@
 class Group < ApplicationRecord
   has_many :transportations
+  #has_and_belongs_to_many :transportations
   belongs_to :user
   has_one_attached :icon
   validates_presence_of :user_id, :icon

@@ -85,6 +85,11 @@ GEM
     bindex (0.8.1)
     bootsnap (1.5.0)
       msgpack (~> 1.0)
+    bootstrap-icons (1.0.4)
+      nokogiri (~> 1.6)
+    bootstrap-icons-helper (1.0.4)
+      bootstrap-icons (~> 1.0)
+      rails (~> 6.0)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
@@ -432,6 +437,7 @@ DEPENDENCIES
   active_storage_validations (= 0.8.2)
   aws-sdk-s3 (= 1.46.0)
   bootsnap (>= 1.4.2)
+  bootstrap-icons-helper
   bootstrap-sass
   bootstrap-will_paginate
   bullet

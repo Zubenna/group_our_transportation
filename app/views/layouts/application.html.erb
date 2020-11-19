@@ -9,13 +9,8 @@
     <%= render 'layouts/shim' %>
   </head>
   <body>
-  <%= render 'layouts/header' %>
-  <div class="flash-box" >
-     <p class="flash"><%= flash.notice %></p>
-  </div>
-  <div class="container main-body">
-      <%= yield %>
-  </div>
-      <%= render 'layouts/footer' %>
+  <div class='main-body'>
+     <%= yield %>
+     <%= render 'layouts/footer' %>
   </body>
 </html>
