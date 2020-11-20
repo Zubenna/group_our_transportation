@@ -29,7 +29,12 @@ Install all the dependencies
 ```
 bundle install
 ```
-
+## You may install yarn if needed, follow steps below;
+```
+yarn cache clean
+```
+yarn install
+```
 Create the database with the following command
 ```
 rails db:create
@@ -43,7 +48,7 @@ Populate the database with the following command
 rails db:seed
 ```
 Run Application test while on the project root with the following command
-## Please run tests separately as indicated below to avoid ambiguity
+## Type rspec in the project root to run tests.
 ```
 rspec
 ```
