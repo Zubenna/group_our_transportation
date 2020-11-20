@@ -13,9 +13,9 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
+gem 'bootstrap-icons-helper'
 gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate'
-gem 'bootstrap-icons-helper'
 gem 'carrierwave'
 gem 'fog', '1.38.0'
 gem 'mini_magick'

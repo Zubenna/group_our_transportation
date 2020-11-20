@@ -10,7 +10,7 @@
 
 /* App Cover */
 
-body, 
+body,
 html {
   box-sizing: border-box;
   padding: 0;
@@ -105,9 +105,9 @@ h2 {
   font-size: 1.5rem;
 }
 
-.login, 
+.login,
 .sign-up {
-  background-color:#5fb523;
+  background-color: #5fb523;
   width: 100%;
   color: #fff;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
@@ -177,7 +177,7 @@ h2 {
   font-size: 1.7rem;
   width: 100%;
   height: 4rem;
-  background-color: #C52F24;
+  background-color: #c52f24;
   margin-top: 8rem;
 }
 
@@ -191,7 +191,7 @@ h2 {
 }
 
 .flash {
-  color: #ffff00;
+  color: #ff0;
 }
 
 #flash {
@@ -248,13 +248,13 @@ h2 {
 
 .bi-list,
 .bi-search {
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
 .trans-list-title {
   font-size: 2rem;
   text-transform: uppercase;
- }
+}
 
 .trans-head-three {
   display: flex;
@@ -277,9 +277,8 @@ h2 {
 }
 
 #most-ancient {
-  color:  #b3b3b3;
+  color: #b3b3b3;
 }
-
 
 .sum_in_km {
   padding: 2rem;
@@ -294,8 +293,8 @@ h2 {
 }
 
 .total-sum,
-.ext-sum{
-   font-size: 2rem;
+.ext-sum {
+  font-size: 2rem;
 }
 
 .sum-box {
@@ -335,7 +334,7 @@ h2 {
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Sign Up and Login form*/
+/* Sign Up and Login form */
 
 .container-fluid {
   background-color: #f2f2f2;
@@ -396,7 +395,6 @@ h2 {
 #transport-form,
 .new-group-form {
   display: flex;
-  // justify-content: space-between;
 }
 
 .new-group-form {
@@ -412,8 +410,7 @@ h2 {
   width: 100%;
 }
 
-@media (min-width: 768px) { 
-
+@media (min-width: 768px) {
   #list-transportation {
     min-height: 31rem;
   }
@@ -429,292 +426,5 @@ h2 {
   #external-theight {
     min-height: 27rem; 
   }
-  
+
 }
-
-
-
-
-// .group-name,
-// .user-picture {
-//   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-//   font-size: 2rem;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-// Sign in form 
-
-.new-user {
-  width: 40%;
-  margin: 0 auto;
-  height: 23rem;
-  padding: 2rem;
-  border-radius: 5px;
-}
-
-.user-form {
-  display: flex;
-  margin-bottom: 2rem;
-  justify-content: space-between;
-}
-
-.user-input {
-  height: 3rem;
-  border-radius: 2px;
-  width: 60%;
-  line-height: 5px;
-  padding: 1rem;
-  box-shadow: none;
-  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.8rem;
-}
-
-.user-label,
-.action {
-  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  color: #fff;
-  font-size: 2rem;
-}
-
-.sign-up {
-  width: 100%;
-  margin-top: 2rem;
-  background-color: #3778c2;
-  border-radius: 5px;
-  padding: 0.5rem;
-}
-
-//  Login Form 
-
-.session-login {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-}
-
-.session-login,
-.login {
-  height: 4rem;
-  background-color: #3778c2;
-  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  border-radius: 5px;
-}
-
-.login-page {
-  margin: 0 auto;
-  width: 40%;
-}
-
-.login-input {
-  width: 60%;
-  font-size: 1.5rem;
-}
-
-.login-label,
-.login {
-  color: #fff;
-  font-size: 2rem;
-}
-
-.login {
-  margin-top: 4rem;
-  width: 100%;
-  box-shadow: none;
-  text-align: center;
-}
-
-// Transport Log
-
-.sum_in_km {
-  padding: 2rem;
-  color: #434b54;
-  background-color: #fff;
-}
-
-.total-sum,
-.bold-distance {
-  font-weight: bolder;
-}
-
-.sum-box {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.list-transportation {
-  background-color: #f2f2f2;
-  padding: 2rem;
-  min-height: 27rem;
-}
-
-.set-group-index {
-  min-height: 37rem;
-}
-
-.row-box {
-  background-color: #fff;
-}
-
-.table tr {
-  border-bottom: #f2f2f2 10px solid;
-}
-
-.table-h3 {
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 1.3rem 46rem;
-}
-
-.table-green h3 {
-  text-align: center;
-  height: 12rem;
-  width: 100%;
-  background-color: #5fb523;
-  margin: 0;
-  padding-top: 3rem;
-}
-
-.group-name,
-.user-picture {
-  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  font-size: 2rem;
-}
-
-// User Profile 
-
-.user-option-ul,
-#set-user {
-  list-style: none;
-}
-
-.user-picture {
-  color: #fff;
-}
-
-.profile-aside {
-  background-color: #3778c2;
-  min-height: 50.5rem;
-  margin-left: 1.54rem;
-  border-top-left-radius: 5px;
-}
-
-.user_info {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.user_info h4 {
-  margin-top: 2rem;
-  color: #fff;
-  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  font-size: 2.5rem;
-}
-
-.user-option-ul li {
-  padding-top: 2rem;
-  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 3rem;
-}
-
-.user-options ul li {
-  font-size: 1.5rem;
-  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  border-bottom: solid #fff 0.4px;
-  margin-top: 1rem;
-}
-
-.set-user,
-.user-option-li {
-  color: #fff;
-}
-
-.profile-right {
-  min-height: 50.5rem;
-  width: 77.3rem;
-  margin-left: 41rem;
-  background-color: #5fb523;
-  border-top-right-radius: 5px;
-}
-
-.user-option-ul {
-  text-align: left;
-  margin-left: 10rem;
-}
-
-//  Flash 
-
-.flash-box {
-  height: 4rem;
-  margin: 0 auto;
-  width: 50%;
-}
-
-.flash {
-  text-align: center;
-  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  color: #3778c2;
-  font-size: 1.5em;
-}
-
-.flash p {
-  padding: 0;
-  margin: 0;
-}
-
-// New Transport and Group Form 
-
-.new-trans-form {
-  width: 30rem;
-  margin: 7rem auto 0 auto;
-}
-
-.transport-form {
-  display: flex;
-  justify-content: space-between;
-}
-
-.span-t {
-  width: 9.4rem;
-}
-
-.span-g {
-  margin-left: 3rem;
-}
-
-.new-transport,
-.new-group {
-  width: 100%;
-  margin-top: 1rem;
-  font-size: 2rem;
-}
-
-.form-label,
-.form-input {
-  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-}
-
-.form-label {
-  font-size: 2rem;
-  margin-right: 3rem;
-}
-
-#t-name {
-  margin: 1rem 0;
-}
-
-*/
