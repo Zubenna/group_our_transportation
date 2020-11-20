@@ -17,24 +17,6 @@ html {
   margin: 0;
 }
 
-// #logo {
-//   padding: 2rem 10rem 0 0;
-//   font-size: 1.3rem;
-//   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-//   color: #fff;
-//   font-weight: bold;
-// }
-
-// .header-item {
-//   color: #fff;
-// }
-
-// .navbarfixed-top {
-//   background-color: #3778c2;
-//   height: 4rem;
-//   padding-top: 1rem;
-// }
-
 .home-list {
   list-style: none;
   display: flex;
@@ -199,13 +181,21 @@ h2 {
   margin-top: 8rem;
 }
 
-.flash {
+.flash,
+#flash {
   height: 1.5rem;
-  text-align: center;
-  color: #ffff00;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
   margin-left: 6.5rem;
+  text-align: center;
+}
+
+.flash {
+  color: #ffff00;
+}
+
+#flash {
+  color: #3778c2;
 }
 
 #profile-pic {
@@ -268,7 +258,6 @@ h2 {
 
 .trans-head-three {
   display: flex;
-  // margin-left: 20rem;
   justify-content: space-between;
 }
 
@@ -340,11 +329,68 @@ h2 {
   height: 10rem;
   width: 100%;
   background-color: #5fb523;
-  margin-bottom: 3rem;
   padding-top: 3rem;
   font-size: 2rem;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
 }
+
+/* Sign Up */
+
+.container-fluid {
+  background-color: #f2f2f2;
+}
+
+.user-input {
+  margin-top: 1rem;
+  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+}
+
+.login-input {
+  margin-top: 10rem;
+  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+}
+
+.user-form-pic {
+  height: 8rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.sign-up-header {
+  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+  background-color: #3778c2;
+  padding: 1.1rem;
+}
+
+.bi-arrow-left {
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+#sign-up,
+#login {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) { 
+
+  .list-transportation {
+    min-height: 30rem;
+  }
+
+  .profile-box {
+    height: 62rem;
+  }
+
+  .set-group-index {
+    min-height: 40rem;
+  }
+  
+}
+
 
 
 

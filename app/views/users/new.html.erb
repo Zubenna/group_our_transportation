@@ -1,26 +1,45 @@
-<h1>Sign up</h1>
-<%= form_with model: @user, local: true, class: 'new-user' do |f| %>
+<div class='sign-up-header'>
+  <div class='trans-head-one'>
+    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+    </svg>
+    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-battery-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M12 5H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z"/>
+      <path d="M2 6h5v4H2V6zm12.5 3.5a1.5 1.5 0 0 0 0-3v3z"/>
+    </svg>
+  </div>
+  <div class='trans-head-two'>
+  <%= link_to '/' do %>
+  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+  </svg>
+  <% end %>
+     <h4 class='trans-list-title'>Register</h4>
+     <h5>NEXT</h5>
+  </div>
+</div>
+<div class='container-fluid'>
+<span id="flash"><%= flash.notice %></span>
+<%= form_with model: @user, local: true do |f| %>
+    <div class='user-form-pic'>
+    <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
+    <h5>Upload Picture</5>
+    </div>
     <div class='user-form'>
-      <%= f.label :first_name, class: 'user-label' %><br />
       <%= f.text_field :first_name, class: 'user-input form-control', placeholder: 'Enter your first name' %>
     </div>
     <div class='user-form'>
-      <%= f.label :last_name, class: 'user-label' %><br />
       <%= f.text_field :last_name, class: 'user-input form-control', placeholder: 'Enter your last name' %>
     </div>
     <div class='user-form'>
-       <%= f.label :email, class: 'user-label' %><br />
        <%= f.email_field :email, class: 'user-input form-control', placeholder: 'Your email' %>
     </div>
     <div class='user-form'>
-      <%= f.label :username, class: 'user-label' %><br />
       <%= f.text_field :username, class: 'user-input form-control', placeholder: 'Enter your username' %>
     </div>
-    <span class='user-form'>
-      <%= f.label :Picture %>
-      <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
-    </span>
+   
     <div class="action">
-      <%= f.submit 'Sign Up', class: 'sign-up' %>
+      <%= f.submit 'Sign Up', class: 'btn btn-primary btn-lg', id: 'sign-up' %>
     </div>
 <% end %>
+</div>
