@@ -9,7 +9,7 @@ RSpec.describe 'Transportation', type: :feature do
     click_button 'Login'
   end
   it 'User should create transportation' do
-    click_link 'All my transportations'
+    click_link 'All my logged in transportations'
     click_link 'Add Transportation'
     fill_in 'transportation[name]', with: 'Car'
     fill_in 'transportation[distance]', with: 10
@@ -33,7 +33,7 @@ RSpec.describe 'Transportation', type: :feature do
     expect(page).to have_content('Something is wrong')
   end
   it 'User should create transportation' do
-    click_link 'All my transportations'
+    click_link 'All my logged in transportations'
     click_link 'Add Transportation'
     fill_in 'transportation[name]', with: ''
     fill_in 'transportation[distance]', with: ''

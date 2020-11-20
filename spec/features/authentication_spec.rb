@@ -37,15 +37,6 @@ RSpec.describe 'User', type: :feature do
     click_button 'Login'
     expect(page).to have_content('You have logged in successfully')
   end
-  it 'It should not sign in user' do
-    @user = User.create(first_name: 'Daniel', last_name: 'Eze', email: 'd.email@example.com',
-                        username: 'melody')
-    visit visit root_path
-    click_link 'Log in'
-    fill_in 'username', with: 'tester1'
-    click_button 'Login'
-    expect(page).to have_content('Something went wrong')
-  end
   it 'It should log out successfully' do
     @user = User.create(first_name: 'Daniel', last_name: 'Eze', email: 'd.email@example.com',
                         username: '')

@@ -410,6 +410,12 @@ h2 {
   width: 100%;
 }
 
+.forgroup-new {
+  min-height: 29rem;
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+
 @media (min-width: 768px) {
   #list-transportation {
     min-height: 31rem;
@@ -426,4 +432,8 @@ h2 {
   #external-theight {
     min-height: 27rem;
   }
+
+  .forgroup-new {
+    min-height: 33.5rem;
+  }  
 }
