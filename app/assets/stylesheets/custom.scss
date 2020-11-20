@@ -254,7 +254,7 @@ h2 {
 .trans-list-title {
   font-size: 2rem;
   text-transform: uppercase;
-}
+ }
 
 .trans-head-three {
   display: flex;
@@ -304,7 +304,8 @@ h2 {
   justify-content: space-between;
 }
 
-.list-transportation {
+#list-transportation,
+.set-group-index {
   background-color: #f2f2f2;
   padding: 2rem;
   min-height: 27rem;
@@ -326,7 +327,7 @@ h2 {
 
 .table-green h3 {
   text-align: center;
-  height: 10rem;
+  height: 8rem;
   width: 100%;
   background-color: #5fb523;
   padding-top: 3rem;
@@ -334,7 +335,7 @@ h2 {
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Sign Up */
+/* Sign Up and Login form*/
 
 .container-fluid {
   background-color: #f2f2f2;
@@ -370,15 +371,51 @@ h2 {
 }
 
 #sign-up,
-#login {
+#login,
+.new-transport {
   margin-top: 2rem;
+  width: 100%;
+}
+
+/* New Transportation */
+
+.new-trans-form,
+.login-form,
+.regis-user-form {
+  height: 50rem;
+}
+
+#create-new-trans {
+  padding-top: 4rem;
+}
+
+.transport-form {
+  margin-bottom: 2rem;
+}
+
+#transport-form,
+.new-group-form {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.new-group-form {
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#transport-form {
+  margin-bottom: 3rem;
+}
+
+.text-input {
   width: 100%;
 }
 
 @media (min-width: 768px) { 
 
-  .list-transportation {
-    min-height: 30rem;
+  #list-transportation {
+    min-height: 31rem;
   }
 
   .profile-box {
@@ -387,6 +424,10 @@ h2 {
 
   .set-group-index {
     min-height: 40rem;
+  }
+
+  #external-theight {
+    min-height: 27rem; 
   }
   
 }
