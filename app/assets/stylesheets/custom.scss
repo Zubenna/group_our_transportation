@@ -307,7 +307,7 @@ h2 {
 }
 
 #list-transportation {
-  height: 112rem;
+  min-height: 112rem;
 }
 
 #list-transportation,
@@ -318,7 +318,7 @@ h2 {
 }
 
 .set-group-index {
-  height: 130rem;
+  min-height: 130rem;
 }
 
 thead tr {
@@ -488,20 +488,12 @@ tbody tr {
   .container-fluid {
     min-height: 200rem;
   }
- 
+
   .jumbotron {
     min-height: 120rem;
   }
 
   .profile-box {
     min-height: 211rem;
-  }
-
-  #list-transportation {
-    height: 150rem;
-  }
-
-  .set-group-index {
-    height: 168rem;
   }
 }
