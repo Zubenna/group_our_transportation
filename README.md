@@ -44,35 +44,37 @@ Get a local copy of the file. Clone with HTTPS using the command below.
 ```
 git clone https://github.com/Zubenna/group_our_transportation.git
 ```
-Access project folders 
+## Access project folders 
 ```
 cd group_our_transport
 ```
-Install all the dependencies
+## Install all the dependencies
 ```
 bundle install
 ```
 ## You may install yarn if needed, follow the steps below;
+
 ```
 yarn cache clean
-```
+
 yarn install
 ```
-Create the database with the following command
+
+## Create the database with the following command
 ```
 rails db:create
 ```
-Migrate the database with the following command
+## Migrate the database with the following command
 ```
 rails db:migrate
 ```
-Populate the database with the following command
+## Populate the database with the following command
 ```
 rails db:seed
 ```
-Run Application test while on the project root with the following 
-```
-## Type rspec in the project root to run tests.
+## Run Application test while on the project root with the following 
+
+### Type rspec in the project root to run tests.
 ```
 rspec
 ```
@@ -82,6 +84,11 @@ rspec
 - In your browser, type http://localhost:3000 to access the app.
 - You can now sign up or Log in, to test all features.
 - Example; Log in with username, testerone or testertwo.
+
+## Upload your own picture
+- Upload your own picture when creating new user and new group for your tests.
+  This is because active storage pictures are stored on the local computer.The live version
+  has been set up professionally to store images using amazon storage.
 
 ## Live Version
 - [Launch App](https://fast-dawn-66004.herokuapp.com/)
