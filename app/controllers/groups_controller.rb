@@ -22,10 +22,10 @@ class GroupsController < ApplicationController
   end
 
   def show
-     @group = Group.find(params[:id])
-     @groups = Group.all
-     @transportations = @group.transportations unless current_user.transportations.size.zero?
-     @group_sum = @transportations.sum(:distance)
+    @group = Group.find(params[:id])
+    @groups = Group.all
+    @transportations = @group.transportations unless current_user.transportations.size.zero?
+    @group_sum = @transportations.sum(:distance)
   end
 
   def edit

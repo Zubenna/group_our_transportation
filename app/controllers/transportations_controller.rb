@@ -1,5 +1,4 @@
 class TransportationsController < ApplicationController
-
   def new
     @page_title = 'Add New Transportation'
     @transportation = Transportation.new
@@ -58,14 +57,6 @@ class TransportationsController < ApplicationController
 
   def delete
     @transportation = Transportation.find(params[:id])
-  end
-  
-
-  def destroy
-    @transportation = Transportation.find(params[:id])
-    @transportation.destroy
-    flash[:notice] = 'Record deleted'
-    redirect_to transportations_path
   end
 
   private

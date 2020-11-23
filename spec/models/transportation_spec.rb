@@ -14,11 +14,12 @@ RSpec.describe Transportation, type: :model do
   end
 
   describe 'associations' do
-    it { should belong_to(:user) }
+    it { should belong_to(:author) }
+    it { should have_many(:groups) }
   end
 
   describe 'validations' do
-    subject { Transportation.create(user_id: @user.id, group_id: 2, name: 'Bus', distance: 10) }
+    subject { Transportation.create(author_id: 1, name: 'Bus', distance: 10) }
     it { should validate_presence_of(:distance) }
     it { should validate_presence_of(:name) }
   end

@@ -17,25 +17,6 @@ html {
   margin: 0;
 }
 
-.jumbotron {
-  background-color: #fff;
-  width: 100%;
-  border: 6px solid #5fb523;
-  border-radius: 12px;
-  margin-top: 6rem;
-  padding: 30rem 3rem 0 3rem;
-  height: 100rem;
-}
-
-.jumbotron h1 {
-  font-size: 7.5rem;
-}
-
-.jumbotron h2 {
-  padding-top: 6rem;
-  font-size: 5rem;
-}
-
 .home-cover {
   width: 90%;
   margin: 0 auto;
@@ -106,6 +87,25 @@ h2 {
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
 }
 
+.jumbotron {
+  background-color: #fff;
+  width: 100%;
+  border: 6px solid #5fb523;
+  border-radius: 12px;
+  margin-top: 6rem;
+  padding: 30rem 3rem 0 3rem;
+  height: 100rem;
+}
+
+.jumbotron h1 {
+  font-size: 7.5rem;
+}
+
+.jumbotron h2 {
+  padding-top: 6rem;
+  font-size: 5rem;
+}
+
 .login,
 .sign-up {
   background-color: #5fb523;
@@ -165,7 +165,7 @@ h2 {
   text-align: center;
 }
 
- #profile-pic {
+#profile-pic {
   margin: 0 auto;
 }
 
@@ -485,23 +485,23 @@ tbody tr {
 }
 
 @media (min-width: 270px) {
-.container-fluid {
-  min-height: 200rem;
-}
+  .container-fluid {
+    min-height: 200rem;
+  }
+ 
+  .jumbotron {
+    min-height: 120rem;
+  }
 
-.jumbotron {
-  min-height: 120rem;
-}
+  .profile-box {
+    min-height: 211rem;
+  }
 
-.profile-box {
-  min-height: 211rem;
-}
+  #list-transportation {
+    height: 150rem;
+  }
 
-#list-transportation {
-  height: 150rem;
-}
-
-.set-group-index {
-  height: 168rem;
-}
+  .set-group-index {
+    height: 168rem;
+  }
 }
