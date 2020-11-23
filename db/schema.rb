@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_21_054812) do
+ActiveRecord::Schema.define(version: 2020_11_20_182259) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,16 +39,10 @@ ActiveRecord::Schema.define(version: 2020_11_21_054812) do
   create_table "groups", force: :cascade do |t|
     t.string "icon"
     t.string "name"
+    t.bigint "author_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "author_id"
-  end
-
-  create_table "groups_transportations", force: :cascade do |t|
-    t.bigint "transportation_id", null: false
-    t.bigint "group_id", null: false
-    t.index ["group_id"], name: "index_groups_transportations_on_group_id"
-    t.index ["transportation_id"], name: "index_groups_transportations_on_transportation_id"
+    t.index ["author_id"], name: "index_groups_on_author_id"
   end
 
   create_table "transportations", force: :cascade do |t|
@@ -80,8 +74,6 @@ ActiveRecord::Schema.define(version: 2020_11_21_054812) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "groups_transportations", "groups"
-  add_foreign_key "groups_transportations", "transportations"
   add_foreign_key "transportations", "users", column: "author_id"
   add_foreign_key "transportations_groups", "groups"
   add_foreign_key "transportations_groups", "transportations"

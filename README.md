@@ -70,7 +70,8 @@ Populate the database with the following command
 ```
 rails db:seed
 ```
-Run Application test while on the project root with the following command
+Run Application test while on the project root with the following 
+```
 ## Type rspec in the project root to run tests.
 ```
 rspec
@@ -83,7 +84,7 @@ rspec
 - Example; Log in with username, testerone or testertwo.
 
 ## Live Version
-- Launch App: (https://fast-dawn-66004.herokuapp.com/)
+- [Launch App](https://fast-dawn-66004.herokuapp.com/)
 
 ## Built With
 - Ruby, Ruby on Rails
