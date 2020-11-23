@@ -1,11 +1,12 @@
   <div class='sum_in_km' >
      <div class='sum-box'>
-       <h3>Total Distance</h3>
+       <h2>Total Distance</h2>
        <h3 class='total-sum'><%= @sum.to_s + 'KM' %></h3>
      </div>
   </div>
-<div>
+<div class='table-container'>  
  <div id='list-transportation'>
+ <span class="flash"><%= flash.notice %></span>  
  <table class="table table-responsive row-box">
     <thead>
     <tr>
@@ -17,15 +18,13 @@
     </thead>
   <tbody>
     <tr><% @transportations.each do |t| %></tr>
-      <% if t.group != nil %>
-      <td><%= image_tag t.group.icon.variant(resize_to_limit: [60, 60]) if t.group.icon.attached? %></td>
+      <td><%= image_tag t.groups.first.icon.variant(resize_to_limit: [90, 90]) if t.groups.first.icon.attached? %></td>
       <td><%= t.name %></td>
       <td class='bold-distance'><%= t.distance.to_s + 'KM' %></td>
       <td><%= t.created_at %></td>
       <td><%= link_to 'Edit', edit_transportation_path(t.id) %> |
       <%= link_to 'Delete', transportation_path(t), method: :delete, data: { confirm: 'Are you really sure?' } %>
       </td>
-      <% end %>
     <% end %> 
  </tbody>
 </table>

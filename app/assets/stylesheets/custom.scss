@@ -17,17 +17,23 @@ html {
   margin: 0;
 }
 
-.home-list {
-  list-style: none;
-  display: flex;
-}
-
 .jumbotron {
   background-color: #fff;
   width: 100%;
   border: 6px solid #5fb523;
-  border-radius: 8px;
-  margin-top: 2rem;
+  border-radius: 12px;
+  margin-top: 6rem;
+  padding: 30rem 3rem 0 3rem;
+  height: 100rem;
+}
+
+.jumbotron h1 {
+  font-size: 7.5rem;
+}
+
+.jumbotron h2 {
+  padding-top: 6rem;
+  font-size: 5rem;
 }
 
 .home-cover {
@@ -36,7 +42,7 @@ html {
 }
 
 footer {
-  height: 6rem;
+  height: 10rem;
   background-color: #3778c2;
   color: #fff;
   padding: 0 2rem;
@@ -47,9 +53,10 @@ footer {
 }
 
 footer small {
-  padding-top: 1.3rem;
+  padding-top: 2.5rem;
   float: left;
   color: #fff;
+  font-size: 2.8rem;
 }
 
 .footer-text {
@@ -62,10 +69,14 @@ footer small {
 
 .footer-nav {
   list-style: none;
-  font-size: 1.3rem;
+  font-size: 3.2rem;
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 1.2rem;
+  padding-top: 2.5rem;
+  float: right;
+}
+
+.footer-nav li {
+  padding-left: 2rem;
 }
 
 .footer-nav li:hover {
@@ -78,31 +89,21 @@ footer small {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   line-height: 1;
 }
 
 h1 {
   text-align: center;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  font-size: 2.8rem;
-  padding: 2.5rem 0;
+  font-size: 5.8rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   color: #434b43;
   text-align: center;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-}
-
-.home-link {
-  padding-right: 2rem;
-  color: #fff;
-  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.5rem;
 }
 
 .login,
@@ -111,18 +112,19 @@ h2 {
   width: 100%;
   color: #fff;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  font-size: 2rem;
-  height: 5rem;
+  font-size: 5rem;
+  font-weight: bold;
+  height: 10rem;
   padding: 1rem;
   text-align: center;
 }
 
 .login {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .sign-up {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 /* Profile Page */
@@ -132,74 +134,68 @@ h2 {
   list-style: none;
 }
 
-.user-picture {
-  color: #fff;
-}
-
 .profile-box {
   background-color: #3778c2;
-  padding: 0 3rem 3rem 3rem;
-  height: 58rem;
-  margin: 0;
+  padding: 2rem 3rem;
+  min-height: 170rem;
+}
+
+.profile-body {
+  margin-top: 20rem;
 }
 
 .circle-me {
-  width: 6rem;
-  height: 6rem;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
+  padding: 2rem;
 }
 
 .shape-icon {
   color: #fff;
-  max-width: 5rem;
-  max-height: 5rem;
-  padding: 1.2rem;
+  width: 16rem;
+  height: 16rem;
 }
 
-.user_info {
-  height: 15rem;
-  width: 15rem;
-  margin: 0 auto;
-  color: #fff;
+.user-pic-box {
+  margin-top: 4rem;
+  height: 25rem;
+  width: 100%;
   text-align: center;
 }
 
-.user_info h4 {
-  margin-top: 1rem;
+ #profile-pic {
+  margin: 0 auto;
+}
+
+.user-pic-box h4 {
+  margin-top: 2rem;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 2rem;
+  font-size: 6rem;
+  color: #fff;
 }
 
 .log-out {
   color: #fff;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.7rem;
-  width: 100%;
-  height: 4rem;
+  font-size: 4rem;
+  height: 8rem;
   background-color: #c52f24;
-  margin-top: 8rem;
-}
-
-.flash,
-#flash {
-  height: 1.5rem;
-  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 2rem;
-  margin-left: 6.5rem;
+  margin-top: 18rem;
+  width: 100%;
   text-align: center;
 }
 
 .flash {
-  color: #ff0;
+  min-height: 4rem;
+  font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  color: #c52f24;
 }
 
-#flash {
-  color: #3778c2;
-}
-
-#profile-pic {
-  margin-top: 2rem;
+.option-link {
+  margin-top: 6rem;
 }
 
 .option-box {
@@ -207,28 +203,28 @@ h2 {
 }
 
 .option-box svg {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
-.option-link {
-  margin-top: 1.9rem;
+.center-link {
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
+  padding: 5rem 0;
 }
 
 .user-option-li {
   color: #fff;
-  margin-left: 1.5rem;
+  margin-left: 2rem;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.7rem;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 2rem;
+  font-size: 4.5rem;
 }
 
 /* Transportation Log */
 
 .trans-header {
   background-color: #3778c2;
-  padding: 2rem;
-  height: 11rem;
+  padding: 3rem;
+  height: 22rem;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -252,7 +248,7 @@ h2 {
 }
 
 .trans-list-title {
-  font-size: 2rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
 }
 
@@ -263,13 +259,19 @@ h2 {
 
 .to-profile {
   color: #fff;
-  font-size: 2.5rem;
-  padding-bottom: 2rem;
+  font-size: 3.5rem;
+}
+
+.bi-three-dots,
+.bi-battery-half,
+.bi-list,
+.bi-search {
+  font-size: 3.5rem;
 }
 
 #most-recent,
 #most-ancient {
-  font-size: 1.6rem;
+  font-size: 4rem;
 }
 
 #most-recent {
@@ -281,20 +283,21 @@ h2 {
 }
 
 .sum_in_km {
-  padding: 2rem;
+  padding: 4.5rem;
   color: #434b54;
   background-color: #fff;
 }
 
 .total-sum,
 .bold-distance,
-.ext-sum {
+.ext-sum,
+.sum-box h2 {
   font-weight: bolder;
 }
 
 .total-sum,
 .ext-sum {
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 .sum-box {
@@ -303,11 +306,27 @@ h2 {
   justify-content: space-between;
 }
 
+#list-transportation {
+  height: 112rem;
+}
+
 #list-transportation,
 .set-group-index {
   background-color: #f2f2f2;
-  padding: 2rem;
-  min-height: 27rem;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.set-group-index {
+  height: 130rem;
+}
+
+thead tr {
+  font-size: 3rem;
+}
+
+tbody tr {
+  font-size: 3rem;
 }
 
 .row-box {
@@ -315,22 +334,23 @@ h2 {
 }
 
 .table tr {
-  border-bottom: #f2f2f2 10px solid;
+  border-bottom: #f2f2f2 15px solid;
 }
 
 .table-h3 {
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   color: #fff;
   padding: 1rem;
 }
 
 .table-green h3 {
   text-align: center;
-  height: 8rem;
+  height: 12rem;
   width: 100%;
   background-color: #5fb523;
   padding-top: 3rem;
-  font-size: 2rem;
+  font-size: 4rem;
+  font-weight: bold;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -338,45 +358,60 @@ h2 {
 
 .container-fluid {
   background-color: #f2f2f2;
+  min-height: 150rem;
 }
 
-.user-input {
-  margin-top: 1rem;
+.user-input,
+.login-input {
+  margin-top: 3rem;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+  height: 10rem;
+  line-height: 2;
+  font-size: 5rem;
 }
 
 .login-input {
-  margin-top: 10rem;
-  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+  margin-top: 15rem;
 }
 
 .user-form-pic {
-  height: 8rem;
-  margin-top: 3rem;
+  height: 16rem;
+  margin-top: 5rem;
   padding: 2rem;
   background-color: #fff;
+  font-size: 4rem;
+}
+
+.user-form-pic h2 {
+  text-align: left;
 }
 
 .sign-up-header {
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
   background-color: #3778c2;
-  padding: 1.1rem;
+  padding: 2rem;
+  height: 16rem;
 }
 
 .bi-arrow-left {
   padding-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.trans-head-two h2 {
   color: #fff;
 }
 
 #sign-up,
 #login,
 .new-transport {
-  margin-top: 2rem;
+  margin-top: 10rem;
   width: 100%;
+  font-size: 5rem;
 }
 
-/* New Transportation */
+/* New Transportation and Group Forms */
 
 .new-trans-form,
 .login-form,
@@ -384,56 +419,89 @@ h2 {
   height: 50rem;
 }
 
+.new-trans-form {
+  padding: 6rem 3rem 2rem 3rem;
+}
+
 #create-new-trans {
-  padding-top: 4rem;
+  padding-top: 10rem;
 }
 
-.transport-form {
-  margin-bottom: 2rem;
+.span-t,
+.span-g {
+  font-size: 4rem;
 }
 
-#transport-form,
-.new-group-form {
-  display: flex;
+.span-t {
+  margin-right: 6rem;
+  margin-top: 2rem;
 }
 
-.new-group-form {
-  padding-top: 4rem;
-  margin-bottom: 2rem;
+.span-g {
+  margin-top: 6rem;
+}
+
+.new-group-form h2 {
+  float: left;
+  color: #434b54;
+  margin-bottom: 8rem;
+}
+
+.form-input,
+.group-text-input {
+  height: 8rem;
+  font-size: 4rem;
+  font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
+}
+
+.new-t-box {
+  margin-top: 6rem;
 }
 
 #transport-form {
-  margin-bottom: 3rem;
+  display: flex;
 }
 
 .text-input {
   width: 100%;
 }
 
-.forgroup-new {
-  min-height: 29rem;
+.list-group-members {
+  min-height: 118rem;
   background-color: #f2f2f2;
   padding: 2rem;
 }
 
-@media (min-width: 768px) {
-  #list-transportation {
-    min-height: 31rem;
-  }
+.group-head-name {
+  text-transform: uppercase;
+}
 
-  .profile-box {
-    height: 62rem;
-  }
+.creator-name {
+  color: #3778c2;
+}
 
-  .set-group-index {
-    min-height: 40rem;
-  }
+.forgroup-new {
+  background-color: #f2f2f2;
+}
 
-  #external-theight {
-    min-height: 27rem;
-  }
+@media (min-width: 270px) {
+.container-fluid {
+  min-height: 200rem;
+}
 
-  .forgroup-new {
-    min-height: 33.5rem;
-  }
+.jumbotron {
+  min-height: 120rem;
+}
+
+.profile-box {
+  min-height: 211rem;
+}
+
+#list-transportation {
+  height: 150rem;
+}
+
+.set-group-index {
+  height: 168rem;
+}
 }

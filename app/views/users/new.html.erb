@@ -15,15 +15,15 @@
   </svg>
   <% end %>
      <h4 class='trans-list-title'>Register</h4>
-     <h5>NEXT</h5>
+     <h2>NEXT</h2>
   </div>
 </div>
 <div class='container-fluid regis-user-form'>
-<span id="flash"><%= flash.notice %></span>
 <%= form_with model: @user, local: true do |f| %>
+  <span class="flash"><%= flash.notice %></span>
     <div class='user-form-pic'>
     <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
-    <h5>Upload Picture</5>
+    <h2>Upload Picture</h2>
     </div>
     <div class='user-form'>
       <%= f.text_field :first_name, class: 'user-input form-control', placeholder: 'Enter your first name' %>

@@ -14,6 +14,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     @user.picture.attach(params[:user][:picture])
     if @user.save
+      session[:author_id] = @user.id
       flash[:notice] = 'User created successfuly. Please, login'
       redirect_to '/'
     else

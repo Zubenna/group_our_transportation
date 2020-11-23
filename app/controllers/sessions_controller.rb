@@ -8,10 +8,12 @@ class SessionsController < ApplicationController
   end
 
   def external
-    @external_transportations = current_user.transportations.transportation_list
-    @external_sum = 0
-    @external_transportations.includes([:group]).each do |t|
-      @external_sum += t.distance if t.group.nil?
+    return if current_user.transportations.size.zero?
+
+     @external_transportations = current_user.transportations.desc.reject{ |t| t.groups.exists? }
+     @external_sum = 0
+     @external_transportations.each do |t|
+       @external_sum += t.distance
     end
   end
 

@@ -19,8 +19,8 @@
   </div>
 </div>
 <div class='container-fluid regis-user-form'>
-<span id="flash"><%= flash.notice %></span>
 <%= form_with model: @user, local: true do |f| %>
+  <span class="flash"><%= flash.notice %></span>
     <div class='user-form-pic'>
     <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
     </div>

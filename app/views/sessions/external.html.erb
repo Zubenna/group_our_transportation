@@ -27,7 +27,7 @@
 </div>
 <div class='sum_in_km'>
   <div class='sum-box'>
-    <h3>Total Distance</h3>
+    <h2>Total Distance</h2>
     <h3 class='ext-sum'><%= @external_sum.to_s + 'KM' %></h3>
   </div>
 </div>
@@ -49,6 +49,8 @@
       <td><%= t.name %></td>
       <td class='bold-distance'><%= t.distance.to_s + 'KM' %></td>
       <td><%= t.created_at %></td>
+      <td><%= link_to 'Edit', edit_transportation_path(t.id) %> |
+      <%= link_to 'Delete', transportation_path(t), method: :delete, data: { confirm: 'Are you really sure?' } %></td>
     <% end %>
  </tbody>
 </table>

@@ -1,6 +1,29 @@
 ## Group Our Transportation App (Rails Capstone Project)
 
-This project entails building an online application where a user or group logs all the distances covered in Kilometer(KM) within a particular period for various means of transportations. Each means of transportation is set up as a group that will contain a record of movement made within such a group. Users can also create records for each particular means of transportation used. This includes recording in particular, the distance covered by that movement in KM, the date and time of movement, the creator of the record, and the current total distance in KM displayed at the top right corner of the app page. Users must create an account and log in before creating records. This project employed the implementation of rails MVC architecture, utilizing the model, controller, view, routes, associations, partials, and styling knowledge in building a rails app.
+This project entails building a mobile application where a user or group logs all the distances covered in Kilometer(KM) within a particular period for various means of transportations. Each means of transportation is set up as a group that will contain a record of movement made within such a group. Users can also create records for each particular means of transportation used. This includes recording in particular, the distance covered by that movement in KM, the date and time of movement, the creator of the record, and the current total distance in KM displayed at the top right corner of the app page. Users must create an account and log in before creating records. This project employed the implementation of rails MVC architecture, utilizing the model, controller, view, routes, associations, partials, and styling knowledge in building a rails app.
+
+## Viewing Page
+
+This project is a mobile app. To have a perfect view of the page, adjust your browser to view the mobile application. You can do that by following the steps below;
+
+### Using Chrome Browser
+
+- Click on the three dots at the top right-hand corner of the browser.
+- Move the cursor to more tools
+- Move the cursor to Developer tools and click on it.
+- Select the portrait mobile icon
+- From the top drop-down menu, select different types and widths of mobile devices to view pages.
+
+### Using Mozilla Firefox
+
+- Click the open menu tab at the top right-hand corner of the browser
+- On the list, click on web developer.
+- Click on Responsive Design Mode
+- On the top centered menu, select mobile devices of various widths and brands
+  to view pages.
+- Ensure you enable:
+  - Reload when touch simulation is toggled.
+  - Reload when user agent is changed.
 
 ## Features 
 - Users can sign up in the app.
@@ -8,8 +31,8 @@ This project entails building an online application where a user or group logs a
 - Users can create a new transportation log.
 - Users can create a new transportation group.
 - Users can edit or delete transportation or group records.
-- Logged in user will see all transportation logs he 
-  created arranged according to the most recent record.
+- Logged in user will see all transportation logs they created arranged according
+  to the most recent record.
 - Logged in user will see all logs he created but were not assigned to a group.
 - Logged in User will see all groups arranged alphabetically.
 
@@ -29,7 +52,7 @@ Install all the dependencies
 ```
 bundle install
 ```
-## You may install yarn if needed, follow steps below;
+## You may install yarn if needed, follow the steps below;
 ```
 yarn cache clean
 ```

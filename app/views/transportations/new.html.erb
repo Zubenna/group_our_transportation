@@ -15,23 +15,23 @@
   </svg>
   <% end %>
      <h4 class='trans-list-title'>New Transportation</h4>
-     <h5>NEXT</h5>
+     <h2>NEXT</h2>
   </div>
 </div>
-<div class='container-fluid new-trans-form' id="create-new-trans" >
+<div class='container-fluid new-trans-form' id="create-new-trans">
 <%= form_with model: @transportation, local: true do |f| %>
-  <span id="flash"><%= flash.notice %></span>
+  <span class="flash"><%= flash.notice %></span>
     <div id='transport-form'>
       <span class='span-t'><%= f.select :group_id, Group.all.collect { |x| [x.name, x.id] }, {:include_blank => 'Select One' } %></span>
-      <h4>Select Group</4>
+      <h2>Select Group</h2>
     </div>
-    <div class='transport-form' id = 't-name'>
+    <div class = 'new-t-box'>
       <%= f.text_field :name, placeholder: 'Enter Description', class: 'form-input form-control' %>
     </div>
-    <div class='transport-form'>
+    <div class = 'new-t-box'>
       <%= f.text_field :distance, placeholder: 'Enter Total Distance in KM', class: 'form-input form-control' %>
     </div>
-    <div>
+    <div class = 'new-t-submit'>
       <%= f.submit 'Create Record', class: 'new-transport btn btn-primary' %>
     </div>
 <% end %>

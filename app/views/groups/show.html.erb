@@ -1,6 +1,6 @@
 <div class='sign-up-header'>
   <div class='trans-head-one'>
-    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <svg width="3.5rem" height="3.5rem" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
     </svg>
     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-battery-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -14,18 +14,19 @@
     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
   </svg>
   <% end %>
-  <h4 class=''><%= @group.name %></h4>
-     <h5>NEXT</h5>
+  <h2 class='group-head-name'><%= @group.name %></h2>
+     <h2>NEXT</h2>
   </div>
 </div>
 <div class='sum_in_km'>
    <div class='sum-box'>
-     <h3>Total Distance</h3>
-     <h3><%= @group_sum.to_s + 'KM'%></h3>
+     <h2>Total Distance</h2>
+     <h2><%= @group_sum.to_s + 'KM'%></h2>
    </div>
 </div>
 <div>
-<div class='forgroup-new'>
+<div class='list-group-members'>
+<span class="flash"><%= flash.notice %></span>
 <table class="table table-responsive row-box">
     <thead>
     <tr>
@@ -37,12 +38,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr><% @transportations.includes([:user]).each do |t| %></tr>
-      <td><%= image_tag t.group.icon.variant(resize_to_limit: [50, 50]) if t.group.icon.attached? %></td>
+    <tr><% @transportations.each do |t| %></tr>
+      <td><%= image_tag t.groups.first.icon.variant(resize_to_limit: [60, 60]) if t.groups.first.icon.attached? %></td>
       <td><%= t.name %></td>
       <td><%= t.distance %></td>
       <td><%= t.created_at %></td>
-      <td><%= t.user.username %></td>
+      <td class='creator-name'><%= t.author.username %></td>
     <% end %> 
  </tbody>
 </table>
