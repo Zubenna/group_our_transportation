@@ -1,0 +1,35 @@
+  <div class='sum_in_km' >
+     <div class='sum-box'>
+       <h2>Total Distance</h2>
+       <h3 class='total-sum'><%= @sum.to_s + 'KM' %></h3>
+     </div>
+  </div>
+<div class='table-container'>  
+ <div id='list-transportation'>
+ <span class="flash"><%= flash.notice %></span>  
+ <table class="table table-responsive row-box">
+    <thead>
+    <tr>
+      <th>Icon</th>
+      <th>Transportation Description</th>
+      <th>Distance (KM)</th>
+      <th>Transportation Date</th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr><% @transportations.each do |t| %></tr>
+      <td><%= image_tag t.groups.first.icon.variant(resize_to_limit: [90, 90]) if t.groups.first.icon.attached? %></td>
+      <td><%= t.name %></td>
+      <td class='bold-distance'><%= t.distance.to_s + 'KM' %></td>
+      <td><%= t.created_at %></td>
+      <td><%= link_to 'Edit', edit_transportation_path(t.id) %> |
+      <%= link_to 'Delete', transportation_path(t), method: :delete, data: { confirm: 'Are you really sure?' } %>
+      </td>
+    <% end %> 
+ </tbody>
+</table>
+</div>
+<div class='table-green'>
+<h3><%= link_to 'Add Transportation', new_transportation_path, class: 'table-h3' %></h3>
+</div>
+</div>

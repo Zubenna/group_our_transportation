@@ -1,0 +1,11 @@
+<header class="navbarfixed-top">
+<nav>
+<ul class="home-list">
+  <% if !current_user? %>
+  <li><%= link_to "Group Our Transportation App", '#', id: "logo" %></li>
+  <li><%= link_to 'Home', '/', class: 'home-link' %></li>
+  <% end %>
+</ul>
+</nav>
+</header>
+        

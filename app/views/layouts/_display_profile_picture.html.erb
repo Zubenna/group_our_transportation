@@ -1,0 +1,7 @@
+<% if @user.picture.attached? %>
+    <div id='profile-pic' >
+      <%= image_tag @user.picture.variant(resize_to_limit: [300, 300]), class: 'img-circle' %>
+    </div>
+<% else %>
+      <%= link_to 'Add Picture', edit_user_path(@user), class: 'user-picture' %>
+<% end %>

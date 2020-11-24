@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GroupOurTransport</title>
+   <title><%= @page_title ? @page_title : 'welcome' %> | Group Our Transportation App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
   </head>
-
   <body>
-    <%= yield %>
+  <div class='main-body'>
+     <%= yield %>
+     <%= render 'layouts/footer' %>
   </body>
 </html>
