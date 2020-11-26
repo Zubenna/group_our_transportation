@@ -26,7 +26,7 @@
 <span class="flash"><%= flash.notice %></span>
 <table class="table table-responsive row-box">
   <thead>
-    <tr>
+    <tr class='group-heading'>
       <th>Icon</th>
       <th>Group Name</th>
       <th>Creation Date</th>
@@ -34,9 +34,9 @@
   </thead>
   <tbody>
     <tr><% @groups.includes([:icon_attachment]).each do |t| %></tr>
-      <td><%= image_tag t.icon.variant(resize_to_limit: [60, 60]) if t.icon.attached? %></td>
+      <td><%= image_tag t.icon.variant(resize_to_limit: [40, 40]) if t.icon.attached? %></td>
       <td><%= link_to t.name, group_path(t.id), class: 'group-name' %></td>
-      <td><%= t.created_at %></td>
+      <td><span class = 'format_date'><%= t.created_at.to_formatted_s(:long) %></span></td>
       <td><%= link_to 'Edit', edit_group_path(t.id) %> |
       <%= link_to 'Delete', group_path(t), method: :delete, data: { confirm: 'Are you really sure?' } %>
     <% end %> 

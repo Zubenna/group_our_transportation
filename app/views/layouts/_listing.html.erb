@@ -13,15 +13,13 @@
       <th>Icon</th>
       <th>Transportation Description</th>
       <th>Distance (KM)</th>
-      <th>Transportation Date</th>
     </tr>
     </thead>
   <tbody>
     <tr><% @transportations.each do |t| %></tr>
-      <td><%= image_tag t.groups.first.icon.variant(resize_to_limit: [90, 90]) if t.groups.first.icon.attached? %></td>
-      <td><%= t.name %></td>
+      <td><%= image_tag t.groups.first.icon.variant(resize_to_limit: [35, 35]) if t.groups.first.icon.attached? %></td>
+      <td><%= t.name %><br/><span class = 'format_date'><%= t.created_at.to_formatted_s(:long) %></span></td>
       <td class='bold-distance'><%= t.distance.to_s + 'KM' %></td>
-      <td><%= t.created_at %></td>
       <td><%= link_to 'Edit', edit_transportation_path(t.id) %> |
       <%= link_to 'Delete', transportation_path(t), method: :delete, data: { confirm: 'Are you really sure?' } %>
       </td>

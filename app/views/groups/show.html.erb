@@ -14,8 +14,8 @@
     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
   </svg>
   <% end %>
-  <h2 class='group-head-name'><%= @group.name %></h2>
-     <h2>NEXT</h2>
+  <h4 class='group-head-name'><%= @group.name %></h4>
+     <h4>NEXT</h4>
   </div>
 </div>
 <div class='sum_in_km'>
@@ -33,16 +33,14 @@
       <th>Icon</th>
       <th>Transportation Means</th>
       <th>Distance (KM)</th>
-      <th>Transport Date</th>
       <th>Creator</th>
     </tr>
   </thead>
   <tbody>
     <tr><% @transportations.each do |t| %></tr>
       <td><%= image_tag t.groups.first.icon.variant(resize_to_limit: [60, 60]) if t.groups.first.icon.attached? %></td>
-      <td><%= t.name %></td>
-      <td><%= t.distance %></td>
-      <td><%= t.created_at %></td>
+      <td><%= t.name %><br/><span class = 'format_date'><%= t.created_at.to_formatted_s(:long) %></span></td>
+      <td><%= t.distance.to_s + 'KM' %></td>
       <td class='creator-name'><%= t.author.username %></td>
     <% end %> 
  </tbody>
