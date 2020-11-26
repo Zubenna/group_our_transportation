@@ -225,10 +225,6 @@ h2 {
 .trans-head-two {
   display: flex;
   color: #fff;
-}
-
-.trans-head-one,
-.trans-head-two {
   justify-content: space-between;
 }
 
@@ -429,9 +425,6 @@ tbody tr {
 
 .span-t {
   font-size: 2rem;
-}
-
-.span-t {
   margin-right: 1rem;
   margin-top: 1rem;
 }
@@ -568,7 +561,7 @@ tbody tr {
   .circle-me {
     padding: 0.9rem;
   }
-  
+
   .shape-icon {
     width: 8rem;
     height: 8rem;
@@ -577,7 +570,7 @@ tbody tr {
   .option-link {
     margin-left: 2rem;
   }
-  
+
   .log-out {
     margin-top: 6rem;
   }
