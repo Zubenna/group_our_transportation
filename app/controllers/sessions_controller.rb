@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
   end
 
   def external
-    return if current_user.transportations.size.zero?
+    @external_transportations = current_user.transportations
+    return if @external_transportations.size.zero?
 
     @external_transportations = current_user.transportations.desc.reject { |t| t.groups.exists? }
     @external_sum = 0
