@@ -490,200 +490,95 @@ tbody tr {
   background-color: #f2f2f2;
 }
 
-
-/*
-@media only screen and (min-width: 280px) and (max-width: 575.98px){
-  .container-fluid {
-    min-height: 200rem;
-  }
-
+@media only screen and (min-width: 768px) {
   .jumbotron {
-    height: 80rem;
-  }
-
-  .profile-box {
-    min-height: 100rem;
-  }
-
-  .log-out {
-    margin: 8rem 0;
-    // margin-top: 20rem;
-  }
-}
-*/
-/*
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .jumbotron {
-    min-height: 80rem;
-    padding-top: 7rem;
-  }
-
-  .profile-box {
-    min-height: 90rem;
-  }
-
-  .log-out {
-    margin: 8rem 0;
-  }
-
-  .profile-body {
-    margin-top: 10rem;
-  }
-
-  #list-transportation {
-    min-height: 70rem;
-  }
-
-  .set-group-index {
-    min-height: 85rem;
-  }
-
-  .container-fluid {
-    min-height: 105rem;
-  }
-
-}*/
-/*
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-  .jumbotron {
-    min-height: 38rem;
-    padding-top: 3rem;
+    min-height: 60rem;
+    padding-top: 8rem;
   }
 
   .jumbotron h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .jumbotron h2 {
-    font-size: 5rem;
-    padding-top: 3rem;
+    font-size: 3rem;
+    margin-top: 6rem;
   }
 
   .login,
   .sign-up {
-  font-size: 4rem;
-  font-weight: bold;
-  height: 8rem;
+    font-size: 2.5rem;
+    height: 5rem;
   }
 
-  .login {
-    margin-top: 2rem;
-  }
-  
-  .sign-up {
-    margin-top: 3rem;
+  footer {
+    height: 5rem;
   }
 
-  .profile-box {
-    min-height: 52rem;
-    padding: 1rem 2rem;
-  }
-
-  .log-out {
-    margin: 6rem 0 7rem 0;
-  }
- 
-  .profile-body {
-    margin-top: 10rem;
-  }
-  
-  .circle-me {
-    width: 14rem;
-    height: 14rem;
-    border: 2px solid #fff;
-    padding: 1rem;
-  }
-  
-  .shape-icon {
-    color: #fff;
-    width: 8rem;
-    height: 8rem;
-  }
-  
-  .user-pic-box {
-    margin-top: 1rem;
-    height: 10rem;
-  }
-
-  .user-pic-box h4 {
-    font-size: 3.5rem;
-  }
-
-  .option-link {
-    margin-top: 3rem;
-  }
-  
-  .option-box svg {
-    margin-top: 2rem;
-  }
-  
-  .center-link {
-    padding: 1.5rem 0;
-  }
-  
-  .user-option-li {
-    margin-left: 4rem;
-    font-size: 4rem;
-  }
-
-  .trans-header {
-    height: 15rem;
-  }
-
-  .trans-head-one {
-    display: none;
-  }
-
-  .table-green {
-    height: 11rem;
-    position: fixed;
-    left: 0;
-    bottom: 11rem;
-    width: 100%;
-  }
-
-  .set-group-index {
-    min-height: 40rem;
-  }
-
-  .user-input,
-  .login-input {
-    margin-top: 2rem;
-    height: 6rem;
-    font-size: 4rem;
-  }
-
-  .login-input {
-    margin-top: 15rem;
-  }
-
-  .user-form-pic {
-    height: 12rem;
-    margin-top: 3rem;
-    padding: 2rem;
-    font-size: 3rem;
-  }
-
-  .user-form-pic h2 {
+  footer a {
     font-size: 2rem;
   }
 
   .sign-up-header {
-    height: 10rem;
+    height: 12rem;
   }
 
-  #sign-up,
+  .md-size {
+    font-size: 3rem;
+  }
+
+  .session-login {
+    margin-top: 12rem;
+  }
+
+  .login-input,
+  .user-input {
+    height: 6rem;
+    font-size: 3rem;
+  }
+
+  .user-form-pic {
+    margin-top: 8rem;
+    font-size: 3rem;
+    height: 14rem;
+  }
+
+  .user-form {
+    margin-top: 3rem;
+  }
+
+  .user-form-pic h2 {
+    font-size: 3rem;
+  }
+
   #login,
-  .new-transport {
-    margin-top: 4rem;
+  #sign-up {
+    height: 6rem;
+    font-size: 3rem;
+  }
+
+  .user-pic-box h4 {
     font-size: 4rem;
   }
 
-  .container-fluid {
-    min-height: 60rem;
+  .user-option-li {
+    font-size: 3.4rem;
   }
 
-  .list-group-members {
-    min-height: 40rem;
+  .circle-me {
+    padding: 0.9rem;
   }
-}*/
+  
+  .shape-icon {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .option-link {
+    margin-left: 2rem;
+  }
+  
+  .log-out {
+    margin-top: 6rem;
+  }
+}

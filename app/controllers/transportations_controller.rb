@@ -10,7 +10,7 @@ class TransportationsController < ApplicationController
     @transportations = current_user.transportations
     return if @transportations.size.zero?
 
-    @transportations = current_user.transportations.includes([:groups]).desc.select { |t| t.groups.exists? }
+    @transportations = current_user.transportations.desc.select { |t| t.groups.exists? }
     @sum = 0
     @transportations.each do |t|
       @sum += t.distance
