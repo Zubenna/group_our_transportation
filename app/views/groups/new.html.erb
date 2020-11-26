@@ -15,15 +15,15 @@
   </svg>
   <% end %>
      <h4 class='trans-list-title'>New Group</h4>
-     <h2>NEXT</h2>
+     <h4>NEXT</h4>
   </div>
 </div>
 <div class='container-fluid new-trans-form'>
 <%= form_with model: @group, local: true, html: { multipart: true } do |f| %>
   <span class="flash"><%= flash.notice %></span>
     <div class='new-group-form'>
-      <span class='span-g'><%= f.file_field :icon, accept: 'image/jpeg,image/gif,image/png' %></span>
-      <h2>Upload Group Icon</h2>
+      <%= f.file_field :icon, accept: 'image/jpeg,image/gif,image/png' %>
+      <h4>Upload Group Icon</h4>
     </div>
     <div id='new-group-form'>
       <%= f.text_field :name, placeholder: 'Enter Group Name', class: 'form-control group-text-input' %>

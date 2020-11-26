@@ -9,12 +9,12 @@
 }
 
 /* App Cover */
-
 body,
 html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background-color: #f2f2f2;
 }
 
 .home-cover {
@@ -23,10 +23,10 @@ html {
 }
 
 footer {
-  height: 10rem;
+  height: 4rem;
   background-color: #3778c2;
   color: #fff;
-  padding: 0 2rem;
+  padding: 0 1rem;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -34,10 +34,10 @@ footer {
 }
 
 footer small {
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
   float: left;
   color: #fff;
-  font-size: 2.8rem;
+  font-size: 0.9rem;
 }
 
 .footer-text {
@@ -50,21 +50,14 @@ footer small {
 
 .footer-nav {
   list-style: none;
-  font-size: 3.2rem;
+  font-size: 1rem;
   display: flex;
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
   float: right;
 }
 
 .footer-nav li {
   padding-left: 2rem;
-}
-
-.footer-nav li:hover {
-  background-color: #fff;
-  color: #434b43;
-  padding: 0.6rem;
-  font-size: 1rem;
 }
 
 h1,
@@ -77,11 +70,9 @@ h4 {
 h1 {
   text-align: center;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  font-size: 5.8rem;
 }
 
 h2 {
-  font-size: 4rem;
   color: #434b43;
   text-align: center;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
@@ -90,20 +81,20 @@ h2 {
 .jumbotron {
   background-color: #fff;
   width: 100%;
-  border: 6px solid #5fb523;
+  border: 3px solid #5fb523;
   border-radius: 12px;
-  margin-top: 6rem;
-  padding: 30rem 3rem 0 3rem;
-  height: 100rem;
+  margin-top: 3rem;
+  padding: 5rem 3rem 2rem 3rem;
+  min-height: 20rem;
 }
 
 .jumbotron h1 {
-  font-size: 7.5rem;
+  font-size: 2.8rem;
 }
 
 .jumbotron h2 {
-  padding-top: 6rem;
-  font-size: 5rem;
+  padding-top: 2rem;
+  font-size: 2rem;
 }
 
 .login,
@@ -112,19 +103,19 @@ h2 {
   width: 100%;
   color: #fff;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: bold;
-  height: 10rem;
-  padding: 1rem;
+  height: 4rem;
+  padding: 0.4rem;
   text-align: center;
 }
 
 .login {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .sign-up {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 /* Profile Page */
@@ -136,38 +127,33 @@ h2 {
 
 .profile-box {
   background-color: #3778c2;
-  padding: 2rem 3rem;
-  min-height: 170rem;
-}
-
-.profile-body {
-  margin-top: 20rem;
+  padding: 2rem;
+  height: 100vh;
 }
 
 .circle-me {
-  width: 25rem;
-  height: 25rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   border: 3px solid #fff;
-  padding: 2rem;
+  padding: 0.7rem;
 }
 
 .shape-icon {
   color: #fff;
-  width: 16rem;
-  height: 16rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .user-pic-box {
-  margin-top: 4rem;
-  height: 25rem;
+  height: 16rem;
   width: 100%;
   text-align: center;
 }
 
 .user-picture {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -176,32 +162,33 @@ h2 {
 }
 
 .user-pic-box h4 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 6rem;
+  font-size: 2rem;
   color: #fff;
 }
 
 .log-out {
   color: #fff;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 4rem;
-  height: 8rem;
+  font-size: 2rem;
+  height: 4rem;
   background-color: #c52f24;
-  margin-top: 18rem;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
   width: 100%;
   text-align: center;
 }
 
 .flash {
-  min-height: 4rem;
+  min-height: 2rem;
   font-family: 'Proxima nova light', Georgia, 'Times New Roman', Times, serif;
-  font-size: 4rem;
+  font-size: 1.4rem;
   color: #c52f24;
 }
 
 .option-link {
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 .option-box {
@@ -209,28 +196,28 @@ h2 {
 }
 
 .option-box svg {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .center-link {
-  border-bottom: 2px solid #fff;
-  border-top: 2px solid #fff;
-  padding: 5rem 0;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  padding: 2rem 0;
 }
 
 .user-option-li {
   color: #fff;
-  margin-left: 2rem;
+  margin-left: 1rem;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  font-size: 4.5rem;
+  font-size: 1.6rem;
 }
 
 /* Transportation Log */
 
 .trans-header {
   background-color: #3778c2;
-  padding: 3rem;
-  height: 22rem;
+  padding: 1rem;
+  height: 10rem;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -238,23 +225,15 @@ h2 {
 .trans-head-two {
   display: flex;
   color: #fff;
-}
-
-.trans-head-one {
-  justify-content: space-between;
-}
-
-.trans-head-two {
   justify-content: space-between;
 }
 
 .bi-list,
 .bi-search {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .trans-list-title {
-  font-size: 4.5rem;
   text-transform: uppercase;
 }
 
@@ -265,19 +244,19 @@ h2 {
 
 .to-profile {
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 1.6rem;
 }
 
 .bi-three-dots,
 .bi-battery-half,
 .bi-list,
 .bi-search {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
 }
 
 #most-recent,
 #most-ancient {
-  font-size: 4rem;
+  font-size: 1.6rem;
 }
 
 #most-recent {
@@ -289,7 +268,7 @@ h2 {
 }
 
 .sum_in_km {
-  padding: 4.5rem;
+  padding: 1rem;
   color: #434b54;
   background-color: #fff;
 }
@@ -301,9 +280,19 @@ h2 {
   font-weight: bolder;
 }
 
+.sum-box h2 {
+  font-size: 1.8rem;
+}
+
 .total-sum,
 .ext-sum {
-  font-size: 5rem;
+  font-size: 1.5rem;
+}
+
+.format_date {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3778c2;
 }
 
 .sum-box {
@@ -313,26 +302,31 @@ h2 {
 }
 
 #list-transportation {
-  min-height: 112rem;
+  min-height: 35rem;
 }
 
 #list-transportation,
 .set-group-index {
   background-color: #f2f2f2;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .set-group-index {
-  min-height: 130rem;
+  min-height: 42rem;
+}
+
+.group-heading,
+.group-name {
+  font-size: 1.6rem;
 }
 
 thead tr {
-  font-size: 3rem;
+  font-size: 1.2rem;
 }
 
 tbody tr {
-  font-size: 3rem;
+  font-size: 1.2rem;
 }
 
 .row-box {
@@ -351,11 +345,14 @@ tbody tr {
 
 .table-green h3 {
   text-align: center;
-  height: 12rem;
+  position: fixed;
+  bottom: 3rem;
+  left: 0;
+  height: 8rem;
   width: 100%;
   background-color: #5fb523;
   padding-top: 3rem;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bold;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
 }
@@ -364,44 +361,45 @@ tbody tr {
 
 .container-fluid {
   background-color: #f2f2f2;
-  min-height: 150rem;
+  padding: 0;
 }
 
 .user-input,
 .login-input {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
-  height: 10rem;
-  line-height: 2;
-  font-size: 5rem;
+  height: 4rem;
+  line-height: 1.5;
+  font-size: 1.8rem;
 }
 
 .login-input {
-  margin-top: 15rem;
+  margin-top: 6rem;
 }
 
 .user-form-pic {
-  height: 16rem;
-  margin-top: 5rem;
-  padding: 2rem;
+  height: 10rem;
+  margin-top: 4rem;
+  padding: 1.5rem;
   background-color: #fff;
-  font-size: 4rem;
+  font-size: 1.8rem;
 }
 
 .user-form-pic h2 {
   text-align: left;
+  font-size: 2rem;
 }
 
 .sign-up-header {
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
   background-color: #3778c2;
-  padding: 2rem;
-  height: 16rem;
+  padding: 1rem;
+  height: 8rem;
 }
 
 .bi-arrow-left {
   padding-top: 1rem;
-  font-size: 3.5rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -412,9 +410,9 @@ tbody tr {
 #sign-up,
 #login,
 .new-transport {
-  margin-top: 10rem;
+  margin-top: 4rem;
   width: 100%;
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 /* New Transportation and Group Forms */
@@ -422,50 +420,46 @@ tbody tr {
 .new-trans-form,
 .login-form,
 .regis-user-form {
-  height: 50rem;
-}
-
-.new-trans-form {
-  padding: 6rem 3rem 2rem 3rem;
-}
-
-#create-new-trans {
-  padding-top: 10rem;
-}
-
-.span-t,
-.span-g {
-  font-size: 4rem;
+  min-height: 55rem;
 }
 
 .span-t {
-  margin-right: 6rem;
-  margin-top: 2rem;
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }
 
-.span-g {
-  margin-top: 6rem;
+.new-group-form {
+  margin-top: 4rem;
+  padding: 1.5rem;
+  margin-bottom: 4rem;
+  background-color: #f2f2f2;
 }
 
-.new-group-form h2 {
+.new-group-form h4 {
   float: left;
   color: #434b54;
-  margin-bottom: 8rem;
 }
 
 .form-input,
 .group-text-input {
-  height: 8rem;
-  font-size: 4rem;
+  height: 4rem;
+  font-size: 2rem;
   font-family: 'Proxima nova bold', Georgia, 'Times New Roman', Times, serif;
 }
 
 .new-t-box {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 #transport-form {
   display: flex;
+  padding: 1.5rem;
+}
+
+#transport-form h2 {
+  font-size: 2rem;
+  padding: 0;
 }
 
 .text-input {
@@ -473,9 +467,8 @@ tbody tr {
 }
 
 .list-group-members {
-  min-height: 118rem;
   background-color: #f2f2f2;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .group-head-name {
@@ -490,16 +483,95 @@ tbody tr {
   background-color: #f2f2f2;
 }
 
-@media (min-width: 270px) {
-  .container-fluid {
-    min-height: 200rem;
-  }
-
+@media only screen and (min-width: 768px) {
   .jumbotron {
-    min-height: 120rem;
+    min-height: 60rem;
+    padding-top: 8rem;
   }
 
-  .profile-box {
-    min-height: 211rem;
+  .jumbotron h1 {
+    font-size: 5rem;
+  }
+
+  .jumbotron h2 {
+    font-size: 3rem;
+    margin-top: 6rem;
+  }
+
+  .login,
+  .sign-up {
+    font-size: 2.5rem;
+    height: 5rem;
+  }
+
+  footer {
+    height: 5rem;
+  }
+
+  footer a {
+    font-size: 2rem;
+  }
+
+  .sign-up-header {
+    height: 12rem;
+  }
+
+  .md-size {
+    font-size: 3rem;
+  }
+
+  .session-login {
+    margin-top: 12rem;
+  }
+
+  .login-input,
+  .user-input {
+    height: 6rem;
+    font-size: 3rem;
+  }
+
+  .user-form-pic {
+    margin-top: 8rem;
+    font-size: 3rem;
+    height: 14rem;
+  }
+
+  .user-form {
+    margin-top: 3rem;
+  }
+
+  .user-form-pic h2 {
+    font-size: 3rem;
+  }
+
+  #login,
+  #sign-up {
+    height: 6rem;
+    font-size: 3rem;
+  }
+
+  .user-pic-box h4 {
+    font-size: 4rem;
+  }
+
+  .user-option-li {
+    font-size: 3.4rem;
+  }
+
+  .circle-me {
+    padding: 0.9rem;
+  }
+
+  .shape-icon {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .option-link {
+    margin-left: 2rem;
+  }
+
+  .log-out {
+    margin-top: 6rem;
   }
 }
