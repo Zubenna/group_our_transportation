@@ -575,3 +575,125 @@ tbody tr {
     margin-top: 6rem;
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .jumbotron {
+    min-height: 40rem;
+    padding-top: 4rem;
+  }
+
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
+
+  .jumbotron h2 {
+    font-size: 2.5rem;
+    margin-top: 6rem;
+  }
+
+  .login,
+  .sign-up {
+    font-size: 1.5rem;
+    height: 3rem;
+  }
+
+  footer {
+    height: 4rem;
+  }
+
+  footer a {
+    font-size: 1.2rem;
+  }
+
+  footer a:hover {
+    color: #5fb523;
+    text-decoration: none;
+  }
+
+  .sign-up-header {
+    height: 8rem;
+  }
+
+  .md-size {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .login-input,
+  .user-input {
+    height: 3.5rem;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .user-form-pic {
+    margin-top: 4rem;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    height: 8rem;
+    width: 80%;
+  }
+
+  .user-form {
+    margin-top: 3rem;
+  }
+
+  .user-form-pic h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  #login,
+  #sign-up {
+    height: 4rem;
+    font-size: 1.5rem;
+    width: 80%;
+    margin-top: 5rem;
+    margin-left: 10%;
+  }
+
+  .user-pic-box h4 {
+    font-size: 3rem;
+  }
+
+  .user-option-li {
+    font-size: 3rem;
+  }
+
+  .circle-me {
+    padding: 0.6rem;
+  }
+
+  .shape-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .option-link {
+    margin-left: 2rem;
+  }
+
+  .option-link a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .log-out {
+    margin-top: 12rem;
+    padding-top: 0.5rem;
+  }
+
+  .log-out:hover {
+    color: #3778c2;
+  }
+
+  .new-trans-form,
+  .login-form,
+  .regis-user-form {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+}
